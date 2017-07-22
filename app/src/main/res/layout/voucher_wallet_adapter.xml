@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginTop="6dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/vw_parent_layout">
+        <ImageView
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:src="@drawable/voucher"
+            android:tint="@color/colorPink"
+            android:id="@+id/vw_image"
+            android:layout_margin="6dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/vw_image"
+            android:text="Vouchers Here"
+            android:layout_marginTop="6dp"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorPink"
+            android:textStyle="bold"
+            android:id="@+id/vw_heading"
+            />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vw_heading"
+        android:layout_toRightOf="@+id/vw_image"
+        android:paddingLeft="10dp"
+        android:text="Expire on Sunday, 30 Jul"
+        android:textColor="@color/colorPink"
+        android:id="@+id/vw_expires"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vw_expires"
+        android:padding="12dp"
+        android:text="Here it is....."
+        android:textColor="@color/colorPink"
+        android:id="@+id/vw_description"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vw_description"
+        android:background="@color/colorPink"
+        android:textColor="@color/colorWhite"
+        android:text="PRESS FOR DETAIL"
+        android:id="@+id/vw_wallet_detail"/>
+
+</RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

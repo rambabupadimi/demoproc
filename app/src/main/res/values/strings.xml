@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">CenreForDentistry</string>
+    <string name="stage1_authentication">Stage1 Authentication</string>
+    <string name="heading">To begin, click on the authentication text message
+    you have been sent by Centre for Dentistry</string>
+    <string name="heading1">if you have not received text message, or you are not yet a
+    registered CFD patient, please click here to contact the Patient Care Team and they will sent it to you</string>
+    <string name="message1">You should have received an introductory text or email from CFD</string>
+    <string name="message2">Please click on the link in that text. if you have not already,you will
+    then receive an Authentication text so you can login</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">Home</string>
+    <string name="nav_my_practice">My Practice</string>
+    <string name="nav_appointments">Appointments</string>
+    <string name="nav_messages">Messages</string>
+    <string name="nav_voucher_wallet">Voucher Wallet</string>
+    <string name="nav_treatment_info">Treatment Info</string>
+    <string name="nav_my_plans">My Plans</string>
+    <string name="nav_refer_friend">Refer Friend</string>
+
+
+    <string name="book_an_appointment">Book an Appointment</string>
+    <string name="find_an_available">find an available slot at one of our Practices and book yourself in</string>
+
+    <string name="existing_appointments">Existing Appointments</string>
+    <string name="any_past">Any past or future appointments that have already been booked</string>
+
+    <string name="emergency_appointments">Emergency Appointments</string>
+    <string name="about_us">About Us</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Centre For Dentistry</item>
+        <item>My Practice</item>
+        <item>Appointments</item>
+        <item>Messages</item>
+        <item>Voucher Wallet</item>
+        <item>Treatment Info</item>
+        <item>My Plans</item>
+        <item>Refer a Friend</item>
+    </string-array>
+
+    <string name="activity_title_about_us">About Us</string>
+    <string name="activity_title_privacy_policy">Privacy Policy</string>
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+
+    <string name="refer_friend_message">When you refer a friend or family member to us at CFD. We like to say thank you. Refer friend to quality for 10%
+    of your next visit. As the CFD family grows so does your reward.</string>
+
+    <string name="my_plan_message">
+        Our Amual Dental plan offers you a cost effective way to help look after you teeth  and prevent
+        problems from building up. The Dental plan is designed to help you plan for your oral health
+        over time so we can look after you and your smile.
+
+    </string>
+
+    <string name="my_plan_message2">
+        A year\'s membership to the CFD annual dental plan entities you to:
+        <ul>
+            <li>Routine Dental Check-Ups</li>
+            <li>Routine scale and Polish Appointments</li>
+            <li>Considerable Cost Savings</li>
+            <li>10% off most dental treatments</li>
+            <li>Discounts on dental care products for our plan members</li>
+            <li>Free Check-Up and Flouride Application for children </li>
+        </ul>
+    </string>
+
+    <string name="resetdata">
+        Caution - This will remove all personal information from this app and reset it to the
+        original state. You will need to contact the CFD again  to associate with your data.
+
+    </string>
+</resources>

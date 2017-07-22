@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose your dentist"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:padding="12dp"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorPrimaryDarker"
+            android:text="MY DENTIST"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/ap_my_dentist"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorPrimaryDarker"
+            android:text="ANY DENTIST"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/ap_any_dentist"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorPrimaryDarker"
+            android:text="CANCEL"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/ap_stage2_cancel"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

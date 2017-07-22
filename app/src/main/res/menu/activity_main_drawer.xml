@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_48dp"
+            android:title="@string/nav_home"
+            />
+        <item
+            android:id="@+id/nav_my_practice"
+            android:icon="@drawable/ic_cfd_notification"
+            android:title="@string/nav_my_practice" />
+        <item
+            android:id="@+id/nav_appointments"
+            android:icon="@drawable/ic_event_white_24dp"
+            android:title="@string/nav_appointments"
+            android:enabled="true"
+            />
+
+        <item
+            android:id="@+id/nav_messages"
+            android:icon="@drawable/ic_mail_white_24dp"
+            android:title="@string/nav_messages" />
+
+        <item
+            android:id="@+id/nav_voucher_wallet"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/nav_voucher_wallet" />
+        <item
+            android:id="@+id/nav_treatment_info"
+            android:icon="@drawable/ic_local_pharmacy_white_24dp"
+            android:title="@string/nav_treatment_info" />
+        <item
+            android:id="@+id/nav_my_plans"
+            android:icon="@drawable/ic_star_white_24dp"
+            android:title="@string/nav_my_plans" />
+
+
+        <item
+            android:id="@+id/nav_refer_friend"
+            android:icon="@drawable/ic_local_offer_white_24dp"
+            android:title="@string/nav_refer_friend" />
+
+    </group>
+<!--
+    <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/nav_about_us"
+                android:title="@string/about_us" />
+            <item
+                android:id="@+id/nav_privacy_policy"
+                android:title="@string/privacy_policy" />
+        </menu>
+    </item>
+-->
+</menu>

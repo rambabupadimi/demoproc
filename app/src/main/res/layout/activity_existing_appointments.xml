@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.cenrefordentistry.activities.ExistingAppointments">
+
+   <android.support.v7.widget.Toolbar
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/existing_appointment_toolbar"
+       android:background="@color/colorWhite">
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Existing Appointments"
+         android:textColor="@color/colorPrimaryDarker"
+         android:textSize="16sp"
+         android:textStyle="bold"/>
+
+   </android.support.v7.widget.Toolbar>
+
+<android.support.v7.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/exstap_recyclerview"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

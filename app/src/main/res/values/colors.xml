@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <color name="colorPrimary">#8BC34A</color>
+        <color name="colorPrimaryDark">#689F38</color>
+        <color name="colorPrimaryLight">#DCEDC8</color>
+        <color name="colorPrimaryDarker">#007C32</color>
+        <color name="colorAccent">#4CAF50</color>
+        <color name="colorWhite">#FFFFFF</color>
+        <color name="colorBlue">#15A3DD</color>
+        <color name="colorPink">#C70973</color>
+        <color name="starred">#FFEB3B</color>
+        <color name="colorPrimaryText">#212121</color>
+        <color name="colorSecondaryText">#757575</color>
+        <color name="dividerColor">#BDBDBD</color>
+        <color name="showHideDetails">#0000FF</color>
+        <color name="spinnerItem">#AAAAAA</color>
+        <color name="editText">#AAAAAA</color>
+        <color name="buttonText">#EEEEEE</color>
+        <color name="headerText">#EEEEEE</color>
+        <color name="colorRed">#F44336</color>
+</resources>

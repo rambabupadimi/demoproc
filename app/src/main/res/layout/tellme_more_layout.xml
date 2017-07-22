@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000">
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+
+    >
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/logo"
+        android:id="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-60dp"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stage 1 Authentication"
+            android:id="@+id/one"
+            android:gravity="center"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/message1"
+            android:id="@+id/two"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/one"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/two"
+            android:gravity="center"
+            android:text="@string/message2"
+            android:layout_marginTop="24dp"
+            android:id="@+id/three"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/three"
+            android:layout_marginTop="24dp"
+            android:background="@color/colorPrimaryDarker"
+            android:textColor="@color/colorWhite"
+            android:text="ok"
+            android:id="@+id/ok_button"/>
+
+    </RelativeLayout>
+</RelativeLayout>
+
+</android.support.v7.widget.CardView>
+</RelativeLayout>

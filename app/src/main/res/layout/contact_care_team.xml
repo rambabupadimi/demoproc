@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="24dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Care Team"
+        android:id="@+id/cct1"
+        android:gravity="center"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please provide your phone number below"
+        android:layout_marginTop="12dp"
+        android:id="@+id/cct2"
+        android:gravity="center"
+        android:layout_below="@+id/cct1"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/register_name"
+        android:layout_below="@+id/cct2"
+        android:hint="Enter your name"
+        android:background="@drawable/rectangle_edittext"
+        android:layout_marginTop="12dp"
+        android:padding="6dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/register_phone_number"
+        android:layout_below="@+id/register_name"
+        android:hint="Enter your name"
+        android:background="@drawable/rectangle_edittext"
+        android:padding="6dp"
+        android:layout_marginTop="12dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_phone_number"
+        android:id="@+id/cct_callback"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimaryDarker"
+        android:textColor="@color/colorWhite"
+        android:text="CALL ME BACK"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cct_callback"
+        android:id="@+id/cct_cancel"
+        android:layout_marginTop="12dp"
+        android:background="@color/colorPrimaryDarker"
+        android:textColor="@color/colorWhite"
+        android:text="CANCEL"/>
+
+
+</RelativeLayout>
+
+</RelativeLayout>

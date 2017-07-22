@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Popup Message No Action call back"
+            android:textSize="20sp"
+            android:singleLine="true"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Popup Message No Action call back"
+            android:layout_marginTop="12dp"
+            android:singleLine="true"
+            android:gravity="center_horizontal"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_edittext"
+            android:layout_marginTop="24dp"
+            android:padding="12dp"
+            android:hint="Enter you phone number here"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="CALL ME BACK"
+            android:id="@+id/pwc_call_me_back"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimaryDarker"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="CANCEL"
+            android:id="@+id/pwc_cancel"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimaryDarker"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

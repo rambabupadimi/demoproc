@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="24dp"
+>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Popup Message No Action call back"
+            android:textSize="20sp"
+            android:singleLine="true"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Popup Message No Action call back"
+            android:layout_marginTop="12dp"
+            android:singleLine="true"
+            android:gravity="center_horizontal"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="OK"
+            android:id="@+id/nap_ok"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimaryDarker"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
