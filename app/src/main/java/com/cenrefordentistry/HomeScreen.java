@@ -9,6 +9,7 @@ import android.graphics.PorterDuffColorFilter;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Handler;
+import android.support.annotation.RequiresApi;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
@@ -34,12 +35,14 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.cenrefordentistry.activities.AppointmentCalenderView;
 import com.cenrefordentistry.fragments.Appointments;
 import com.cenrefordentistry.fragments.Home;
 import com.cenrefordentistry.fragments.Messages;
 import com.cenrefordentistry.fragments.MyPlans;
 import com.cenrefordentistry.fragments.MyPractice;
 import com.cenrefordentistry.fragments.ReferFriend;
+import com.cenrefordentistry.fragments.RequestCallBack;
 import com.cenrefordentistry.fragments.TreatmentInfo;
 import com.cenrefordentistry.fragments.VoucherWallet;
 import com.cenrefordentistry.helper.CircleTransform;
@@ -69,6 +72,8 @@ public class HomeScreen extends AppCompatActivity {
         private static final String TAG_TREATMENTINFO = "TreatmentInfo";
         private static final String TAG_VOUCHERWALLET = "VoucherWallet";
 
+        private static final String TAG_REQUEST_CALL_BACK ="RequestCallBack";
+
         public static String CURRENT_TAG = TAG_HOME;
 
         // toolbar titles respected to selected nav menu item
@@ -83,6 +88,7 @@ public class HomeScreen extends AppCompatActivity {
         ImageView toolbarImage,toolbarSettings,toolbarRefresh,toolbarHome;
 
 
+        @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
         @Override
         protected void onCreate(Bundle savedInstanceState) {
                 super.onCreate(savedInstanceState);
@@ -106,11 +112,9 @@ public class HomeScreen extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
                                 loadHomeFragment(AppConstants.TAG_HOME,AppConstants.HOME_INDEX);
+
                         }
                 });
-
-
-
 
 
                 // Navigation view header
@@ -391,6 +395,29 @@ public class HomeScreen extends AppCompatActivity {
                                 toolbarTitle.setText(activityTitles[7].toString());
                                 return referFriend;
 
+
+
+                        case 8:
+                                // settings fragment
+                                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                                        Window window = getWindow();
+                                        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+                                        window.setStatusBarColor(Color.parseColor("#007C32"));
+                                }
+
+                                RequestCallBack requestCallBack = new RequestCallBack();
+                                toolbarTitle.setTextColor(Color.parseColor("#007C32"));
+                                toolbarSettings.setColorFilter(Color.parseColor("#007C32"));
+                                toolbarImage.setColorFilter(Color.parseColor("#ffffff"));
+                              //  Glide.with(this).load(R.drawable.ic_local_offer_white_24dp).into(toolbarImage);
+
+                                toolbarSettings.setVisibility(View.GONE);
+                                toolbarRefresh.setVisibility(View.GONE);
+                                toolbarHome.setVisibility(View.VISIBLE);
+                                toolbarTitle.setText(activityTitles[8].toString());
+                                return requestCallBack;
+
+
                         default:
                                 return new Home();
                 }
@@ -449,6 +476,10 @@ public class HomeScreen extends AppCompatActivity {
                                                 navItemIndex = 7;
                                                 CURRENT_TAG = TAG_REFERFRIEND;
                                                 break;
+                                        case R.id.nav_request_callback:
+                                                navItemIndex = 8;
+                                                CURRENT_TAG = TAG_REQUEST_CALL_BACK;
+                                                break;
 
  /*
         case R.id.nav_about_us:
@@ -503,9 +534,24 @@ public class HomeScreen extends AppCompatActivity {
                 //calling sync state is necessary or else your hamburger icon wont show up
                 actionBarDrawerToggle.syncState();
         }
-
+        private Boolean exit = false;
         @Override
         public void onBackPressed() {
+                if (exit) {
+                        finish(); // finish activity
+                } else {
+                        Toast.makeText(this, "Press Back again to Exit.",
+                                Toast.LENGTH_SHORT).show();
+                        exit = true;
+                        new Handler().postDelayed(new Runnable() {
+                                @Override
+                                public void run() {
+                                        exit = false;
+                                }
+                        }, 3 * 1000);
+
+                }
+
                 if (drawer.isDrawerOpen(GravityCompat.START)) {
                         drawer.closeDrawers();
                         return;

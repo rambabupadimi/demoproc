@@ -26,7 +26,8 @@ public class AppPreferences {
     private static final String IS_NOT_FIRST_TIME="is_not_first_time";
     private static final String IMAGE_URI="image_uri";
     private static final String VALID_TIME="valid_time";
-
+    private static final String TOKEN = "token";
+    private static final String USERID ="userid";
     // Constructor
     public AppPreferences(Context context)
     {
@@ -52,6 +53,32 @@ public class AppPreferences {
         return flag;
     }
 
+
+    public void setUserId(String userId)
+    {
+        String val = userId.toString().trim();
+        editor.putString(USERID,val);
+        editor.commit();
+    }
+    public String getUserId()
+    {
+        String userid = pref.getString(USERID, "");
+        return userid;
+
+    }
+
+    public void setAccessToken(String token)
+    {
+        String val = token.toString().trim();
+        editor.putString(TOKEN,val);
+        editor.commit();
+    }
+
+    public String getToken()
+    {
+        String flag = pref.getString(TOKEN, "");
+        return flag;
+    }
 
     public void clear()
     {

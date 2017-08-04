@@ -62,7 +62,7 @@
         android:layout_below="@+id/vw_description"
         android:background="@color/colorPink"
         android:textColor="@color/colorWhite"
-        android:text="PRESS FOR DETAIL"
+        android:text="PRESS FOR DETAILS"
         android:id="@+id/vw_wallet_detail"/>
 
 </RelativeLayout>

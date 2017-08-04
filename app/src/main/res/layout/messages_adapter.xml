@@ -9,7 +9,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="0dp"
-        app:cardUseCompatPadding="true">    <RelativeLayout
+        app:cardUseCompatPadding="true">
+        <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -39,7 +40,8 @@
             android:layout_toRightOf="@+id/msg_heading"
             android:text="16 July 2017"
             android:gravity="right"
-            android:padding="12dp"/>
+            android:padding="12dp"
+            android:id="@+id/msg_date"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -74,6 +76,7 @@
                 android:layout_height="40dp"
                 android:layout_weight="1"
                 android:text="DELETE"
+                android:id="@+id/msg_delete"
                 android:layout_margin="4dp"
                 android:textColor="@color/colorWhite"
                 android:background="@color/colorPrimary"/>

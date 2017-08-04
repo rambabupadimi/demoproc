@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CenreForDentistry</string>
+    <string name="app_name">CentreForDentistry</string>
     <string name="stage1_authentication">Stage1 Authentication</string>
     <string name="heading">To begin, click on the authentication text message
     you have been sent by Centre for Dentistry</string>
@@ -23,6 +23,7 @@
     <string name="nav_treatment_info">Treatment Info</string>
     <string name="nav_my_plans">My Plans</string>
     <string name="nav_refer_friend">Refer Friend</string>
+    <string name="nav_request_callback">Request CallBack</string>
 
 
     <string name="book_an_appointment">Book an Appointment</string>
@@ -44,6 +45,7 @@
         <item>Treatment Info</item>
         <item>My Plans</item>
         <item>Refer a Friend</item>
+        <item>Request CallBack</item>
     </string-array>
 
     <string name="activity_title_about_us">About Us</string>
@@ -79,6 +81,447 @@
     <string name="resetdata">
         Caution - This will remove all personal information from this app and reset it to the
         original state. You will need to contact the CFD again  to associate with your data.
-
     </string>
+
+    <string name="request_callback">
+
+        if you would like to talk to us - whether that is to book an appointment, talk about a
+        treatment or simply ask a question - we are happy to help. Our Patient Care Team will call you back.
+    </string>
+
+
+    <!-- treatmentinfo details -->
+
+
+    <string name="bridgesandpartialdentures_title">Bridges and Partial Dentures</string>
+    <string name="bridgesandpartialdentures_desc">\tIf you have a gap left by a missing tooth this can put more strain on the teeth at either side and affect your ‘bite’ as the teeth next to the space can lean into the gap and change the way the upper and lower teeth bite together. This can then lead to food getting stuck in the gap, causing decay and gum disease.
+    Bridges or partial dentures may be the answer.\n\n
+    Bridges are exactly that: a bridge. Most bridges are fixed prosthetic devices that cover the gap between existing natural teeth or implants. The adjacent teeth are prepared as crowns and hold a false tooth in place.
+    A partial denture is a plate with one or more false teeth on it. It can be made of plastic or a mixture of metal and plastic. Both types may have clips (clasps) to help keep the denture in place in your mouth. Depending on where they are, some of these clips may show when you smile or open your mouth.
+    The dentist will advise on the best option for your teeth and explain the ins and outs of each option to allow you to decide if this is the route you want to go.\n\n</string>
+    <string name="bridgesandpartialdentures_question_1"><b>What are my options for replacing missing teeth?</b>\n</string>
+    <string name="bridgesandpartialdentures_answer_1">This depends on the number of teeth missing, where they are in your mouth, and the condition of your remaining teeth.\n
+        There are three main ways to replace missing teeth.\n
+        1. Removable false tooth (or teeth) – called a partial denture.\n
+        2. Fixed bridge. Usually used when there are fewer teeth to replace, or when the missing teeth are only on one side of the mouth.\n
+        3. Dental implants. This is where an artificial root is placed into the bone of the jaw and a crown or bridge placed on top of this.\n\n</string>
+    <string name="bridgesandpartialdentures_question_2"><b>What\'s the benefit of a metal denture over plastic?</b>\n</string>
+    <string name="bridgesandpartialdentures_answer_2">Plastic partial dentures are less expensive but,unless they are designed very carefully, can damage the teeth they fit against.
+        Metal partial dentures are usually made from an alloy of cobalt and chromium and are much stronger. They are lighter to wear and can be supported by the remaining teeth. Although the base is metal, they have gum-coloured plastic and natural-looking teeth fixed to them.
+        They are more expensive than plastic ones.\n\n</string>
+    <string name="bridgesandpartialdentures_question_3"><b>Are there reasons why I may not be able to have a bridge fitted?</b>\n</string>
+    <string name="bridgesandpartialdentures_answer_3">You can have a bridge only if you have enough strong teeth with good bone support or dental implants that can hold the bridge in place.
+        The dentist can advise on the best options for your mouth.\n\n</string>
+    <string name="bridgesandpartialdentures_question_4"><b>How do I look after my dental bridge?</b>\n</string>
+    <string name="bridgesandpartialdentures_answer_4">You should care for your dental bridge by cleaning it every day. This will help to prevent problems such as bad breath and gum disease. You should also clean under the false tooth every day.
+        We will show you how to use a bridge needle or special floss to reach this tricky to get to areas.\n\n</string>
+    <string name="bridgesandpartialdentures_question_5"><b>I\'ve heard implants are a better option. Is this true?</b>\n</string>
+    <string name="bridgesandpartialdentures_answer_5">One of the benefits of dental implants is that you may be able to replace missing teeth without having to have crowns on other teeth. Talk to the dentist about the options and the pros and cons of each.\n\n</string>
+    <string name="bridgesandpartialdentures_count">5</string>
+
+    <string name="childrendental_title">Children\'s Dental Treatment</string>
+    <string name="childrendental_desc">\tWith children’s dental decay on the rise, it is increasingly important to ensure that your children’s teeth are checked regularly. The dentist will not only complete a full check up but can also, if desired, add a fluoride application for extra protection against decay. For children under 11 years old, whose parent’s are registered with the practice, both the check up and fluoride application are free. For children 11 years and above the price is £15.\n\n
+    Even if you have a phobia of dentists yourself, it is of vital importance that you bring your child regularly.  The earlier you start bringing your child to the dentist, the more relaxed they will be and the less likely they are to need further or extensive treatment.\n\n
+    If your child needs orthodontic work, we employ orthodontic specialists who can assess your child and fit them with braces. This can usually take place in your regular CFD surgery, for your convenience and to help your child feel at ease.\n\n
+    The advice below answers some of the most commonly asked questions we get from parents, but please pop in to see us if you have any other queries.\n\n</string>
+    <string name="childrendental_question_1"><b>When should I first take my child to the dentist ?</b>\n</string>
+    <string name="childrendental_answer_1">It is best to discuss this with your dentist first, but you could take your baby to your own routine check-ups.
+        This can help the baby to get used to the surroundings.\n\n
+        Your dentist will be able to offer advice and prescribe medicines for teething pains, and will be happy to answer any questions you may have.
+        Your child’s own check-ups can start any time from about six months or from when the teeth start to appear.\n\n</string>
+    <string name="childrendental_question_2"><b>What if my child is nervous about going to the dentist?</b>\n</string>
+    <string name="childrendental_answer_2">Here at Centre for Dentistry we overcome a lot of adult and child fears about visiting the dentist. If your child is nervous, pop in a few times before their appointment when you are doing your shopping. Our teams are really friendly and welcoming. They may give them a balloon and let them have a climb on the dentist’s chair (if no one is in it!) .\n\n
+        Children can sense fear in their parents, so it is important not to let your child feel or hear any fears you may have. Try to be supportive if your child needs to have any dental treatment.\n\n
+        Regular visits to the dental team are essential in helping your child get used to the surroundings, so that, if and when, they do need any treatment, they feel relaxed and happy at the dentist.\n\n</string>
+    <string name="childrendental_question_3"><b>When do my child\'s teeth come through?</b>\n</string>
+    <string name="childrendental_answer_3">All children are different and develop at different rates, however, the following is a general guide.
+        First or ‘baby’ teeth have usually developed before your child is born and will start to come through at around six months. All twenty baby teeth should be through by the age of two-and-a-half.\n\n
+        The first permanent ‘adult’ molars (back teeth) will appear at about six years, behind the baby teeth and before the first teeth start to fall out. The adult teeth will then replace the baby teeth. It is usually the lower front teeth that are lost first, followed by the upper front teeth shortly after.\n\n All adult teeth should be in place by the age of thirteen, except the wisdom teeth.
+        These may come through at any time between eighteen and twenty five years of age.\n\n</string>
+    <string name="childrendental_count">3</string>
+
+
+    <string name="dentalcrown_title">Dental Crowns</string>
+    <string name="dentalcrown_desc">
+        Dental crowns are a lot stronger and more permanent than fillings. They are normally fitted to repair broken teeth or teeth that have been weakened by decay or a very large filling. They can also be used to improve the appearance of a tooth or to hold a bridge or denture in place.\n\n
+        A crown is basically a protective cover that fits over a broken or decayed tooth, which is why a crown can also be called a cap. It can be made of porcelain bonded to precious metal (looks very natural so good for front teeth), ceramic (a metal free alternative), glass or gold-alloy (very hard wearing).\n\n
+        The dentist will discuss with you the options available and advise if he thinks a crown is the best solution. If you decide to go ahead, you will require at least two appointments. The first to prepare the tooth for the crown, create an impression and cover the tooth with provisional restoration; the second for cementation of the permanent crown.\n\n
+        If you are having a crown fitted to your front teeth you may require more than two visits, to ensure an exact cosmetic fit.\n\n</string>
+    <string name="dentalcrown_question_1"><b>Why do I need a crown?</b>\n</string>
+    <string name="dentalcrown_answer_1">Crowns repair broken teeth and make them strong again. You may also have a crown if you’ve had root canal therapy and need to protect what is left of the tooth.
+        Sometimes crowns are required to hold a bridge or a denture in place.\n\n</string>
+    <string name="dentalcrown_question_2"><b>How long is the treatment and does it hurt?</b>\n</string>
+    <string name="dentalcrown_answer_2">You will need to have at least two visits. In the first visit, we prepare the tooth, take impressions and record the shade of the tooth. We then fit the temporary crown. In the second visit, we fit the permanent crown. There will usually be about 1 to 2 weeks between appointments.\n\n
+        It shouldn’t hurt. You can have a local anaesthetic and the preparation work should feel no different from a filling.
+    If the tooth does not have a nerve, you may not need a local anaesthetic.\n\n</string>
+    <string name="dentalcrown_question_3"><b>Will the crown look and feel different?</b>\n</string>
+    <string name="dentalcrown_answer_3">The crown will be made to match your other teeth as closely as possible.\n\n
+        The shape will be slightly different from the shape of your tooth before it was crowned, but within a few days you will not notice the difference.
+    If your bite does not feel comfortable, come back and ask us to check and adjust it.\n\n</string>
+    <string name="dentalcrown_question_4"><b>What is the crown made of?</b>\n</string>
+    <string name="dentalcrown_answer_4">Crowns can be made of a variety of different materials. Some of the most options are listed below.\n\n
+        <i>Porcelain bonded to precious metal</i>: this is what most crowns are made from. A precious metal base is made and then porcelain is applied in layers over it.\n\n
+        <i>Porcelain</i>: these crowns are made completely from porcelain and are not as strong as bonded crowns. But they can look very natural and are most often used for front teeth.\n\n
+        <i>All-ceramic</i>: this modern technique offers a metal-free alternative, which can give the strength of a bonded crown and the appearance of a porcelain crown. Therefore it is suitable for use in all areas of the mouth.\n\n
+        <i>Glass</i>: these crowns look very natural and can be used anywhere in the mouth.\n\n
+        <i>Gold-alloy crowns</i>: gold is one of the oldest filling materials. Today it is used with other metal alloys to increase its strength, which makes it very hardwearing. These crowns are silver or gold in colour.\n\n
+    </string>
+    <string name="dentalcrown_count">4</string>
+
+    <string name="dentalimplant_title">Dental Implant</string>
+    <string name="dentalimplant_desc">Dental implants are increasing in popularity. We are all generally living longer and want to preserve a healthy, natural looking smile without the disadvantages and problems that dentures can sometimes bring.\n\n
+    At Centre for Dentistry we run regular implant clinics with our experienced implant surgeons who can give you a consultation and advise on treatment. To assess if you would be suitable for dental implants, please book a check up with one of our dentists and let them know that this is what you are considering. Following the check up we can then let you know if you are suitable and book you in for the consultation.\n\n
+    For further information on dental implants, please see the commonly asked questions below.\n\n</string>
+    <string name="dentalimplant_question_1"><b>Am I suitable for dental implants?</b>\n</string>
+    <string name="dentalimplant_answer_1">Whether you are suitable for dental implants depends on the condition of the bone in your jaw. This will initially be assessed by the dentist along with your gums and teeth.\n\n
+        If it looks like you may be suitable, we will arrange for a consultation with our implant surgeon. They may arrange for a number of special tests to find out the amount of bone still there.\n\n
+        If there is not enough, or if it isn’t healthy enough, it may not be possible to place implants without grafting bone into the area first.\n\n</string>
+    <string name="dentalimplant_question_2"><b>What is a dental implant?</b>\n</string>
+    <string name="dentalimplant_answer_2">A dental implant is used to support one or more false teeth. It is a titanium screw that can replace the root of a tooth when it fails. It is fixed into the jaw bone and then a false tooth goes over it.\n\n</string>
+    <string name="dentalimplant_question_3"><b>Can I have more than one implant?</b>\n</string>
+    <string name="dentalimplant_answer_3">Yes. You can have any number of teeth replaced with implants – from one single tooth to a complete set.\n\n</string>
+    <string name="dentalimplant_question_4"><b>Does it hurt</b>\n</string>
+    <string name="dentalimplant_answer_4">Placing an implant is usually done using a local anaesthetic. You will not feel any pain at the time but you may feel some discomfort during the week after the surgery.\n\n
+        You may be given a sedative if you are very nervous or if your case is a complicated one.\n\n</string>
+    <string name="dentalimplant_question_5"><b>Are implants safe?</b>\n</string>
+    <string name="dentalimplant_answer_5">Yes. Implants are a safe, well-established treatment.\n\n</string>
+    <string name="dentalimplant_question_6"><b>How long do implants last for?</b>\n</string>
+    <string name="dentalimplant_answer_6">Implants, like natural teeth, will last for as long as you care for them.\n\n
+        If you look after them and go for your regular maintenance appointments and, if the bone they are fitted to is strong and healthy, you can expect them to last for many years.  As with other surgical implants (such as a hip replacement) there is no lifetime guarantee.\n\n
+        If implants are not properly cleaned and cared for you may get gum infection and have other problems. So look after them well!\n\n
+        For any advice, just ask the dentist.\n\n</string>
+    <string name="dentalimplant_question_7"><b>How long does it take to get implants fitted?</b>\n</string>
+    <string name="dentalimplant_answer_7">We will be able to give you a rough timetable before your implant treatment starts.\n\n
+        After your implants have been placed, the bone in your jaw needs to grow onto them and fuse to them. This usually takes a few months. Sometimes the implants may be stable enough when they are placed for the false teeth to be fitted sooner than this but sometimes treatment can take longer depending on your body and it’s healing time.\n\n</string>
+    <string name="dentalimplant_question_8"><b>How do I clean dental implants?</b>\n</string>
+    <string name="dentalimplant_answer_8">We will give you detailed advice on how to look after your implants. Cleaning around the teeth attached to the implants is no more difficult than cleaning natural teeth but some areas may be difficult to reach and we’ll show you how to clean them. You may need to visit the hygienist more often but we can advise you on this.\n\n</string>
+    <string name="dentalimplant_question_9"><b>Can others tell I have dental implants?</b>\n</string>
+    <string name="dentalimplant_answer_9">No. Most implants look exactly like natural teeth.\n\n</string>
+    <string name="dentalimplant_count">9</string>
+
+    <string name="dentures_title">Dentures</string>
+    <string name="dentures_desc">Dentures and partial dentures can provide an effective solution for missing teeth and help to restore your smile.\n\n
+    A ‘complete’ or ‘full’ denture is one which replaces all the natural teeth in either the upper or lower jaw.\n\n
+    A ‘partial’ denture fills in the spaces left by lost or missing teeth. It may be fastened to your natural teeth with metal clasps or ‘precision attachments’.\n\n
+    Modern dentistry has moved on a lot and whilst dentures are one option, nowadays there are also other options available. If you have missing teeth and are unsure whether partial or full dentures are the solution, please come and talk to us. The dentist can explain your options, listen to your requirements and advise on the best way forward.\n\n
+    Below are answers to some of the most commonly asked questions about wearing dentures.\n\n</string>
+    <string name="dentures_question_1"><b>Why do I need dentures?</b>\n</string>
+    <string name="dentures_answer_1">Wearing dentures replaces lost or missing teeth and allows you to eat your food comfortably and smile with confidence.\n\n
+        If have gaps between your teeth where teeth are missing, then your other teeth may move to take up some of the space, so you could end up with crooked or tilted teeth.
+            This could affect the way you bite and could damage your other teeth.\n\n</string>
+    <string name="dentures_question_2"><b>Can I have dentures straightaway after having teeth removed?</b>\n</string>
+    <string name="dentures_answer_2">Yes, usually dentures can be fitted straight after your teeth have been removed. These are called ‘immediate dentures’. You will need to visit the dental team beforehand for them to take measurements and impressions of your mouth.\n\n
+        With immediate dentures you don’t have to be without teeth while your gums are healing. However, bone and gums can shrink over time. If they do, then your immediate dentures may need relining, adjusting or even replacing.\n\n
+        Sometimes we advise waiting until your gums are healed, as this can result in a better fit. Healing may take several months.\n\n</string>
+    <string name="dentures_question_3"><b>Will dentures change my appearance?</b>\n</string>
+    <string name="dentures_answer_3">A full denture gives support to your cheeks and lips. Without this support, sagging facial muscles can make a person look older and they will find it harder to eat and speak properly, so dentures should actually enhance your appearance if you have had missing teeth previously.
+        Partial dentures can be made to closely match your natural teeth.\n\n</string>
+    <string name="dentures_question_4"><b>Is it easy to eat with dentures?</b>\n</string>
+    <string name="dentures_answer_4">Eating with dentures takes a bit of practice. Start with soft foods cut into small pieces. Chew slowly, using both sides of your mouth at the same time to stop the denture moving. As you become more used to your denture, add other foods until you get back to your normal healthy diet.\n\n
+        If you are concerned about this, please talk to us about other dental options available to replace missing teeth, such as dental implants and bridges. You may find these suit you better.\n\n</string>
+    <string name="dentures_question_5"><b>Will dentures affect the way I speak?</b>\n</string>
+    <string name="dentures_answer_5">Pronouncing certain words may take practice. Practice reading out loud and repeating difficult words and you will get used to talking with dentures.\n\n
+        If you find that your dentures occasionally slip when you laugh, cough or smile, reposition them by gently biting down and swallowing. If this happens a lot, come back to see us as it may be that the fit is not right.\n\n
+        If you are considering dentures and concerned about this, have a chat with the dentist and he will outline other options, such as dental implants and bridges, that may be available to you instead.\n\n</string>
+    <string name="dentures_question_6"><b>When I first get dentures, how long should I wear them for?</b>\n</string>
+    <string name="dentures_answer_6">During the first few days, we may advise you to wear them for most of the time, including while you are asleep. After your mouth gets used to the dentures, we may advise you to take them out before bed. This allows your gums to rest and helps keep your mouth healthy. If you are not wearing your dentures at night, it is best to store them in a small amount of water to stop them warping.\n\n</string>
+    <string name="dentures_question_7"><b>Will I need to use denture fixative?</b>\n</string>
+    <string name="dentures_answer_7">You shouldn’t need a denture fixative. Some people like to use one to give them extra confidence or if their dentures start to become loose before they have them replaced. A poorly fitting denture may cause irritation and sores, so please pop in to see us if you are having problems with your dentures.\n\n</string>
+    <string name="dentures_question_8"><b>How should I care for my dentures?</b>\n</string>
+    <string name="dentures_answer_8">This will be explained to you when we fit your dentures.\n\n
+        Always take care when taking dentures in and out. Dentures may break if you drop them. Clean dentures over a bowl of water or a folded towel in case you drop them.\n\n
+        To clean dentures, brush them before soaking them, to help remove any bits of food. Use an effervescent denture cleaner to remove stubborn stains  – always follow the manufacturer’s instructions.
+            Then brush the dentures again, as you would your own teeth, using toothpaste and a small- to medium-headed toothbrush. Clean all surfaces but be careful not to scrub too hard as this may cause grooves in the surface.\n\n
+    If you notice a build-up of stains or scale, ask our dental team for advice and help.\n\n</string>
+    <string name="dentures_question_9"><b>With dentures, do I still need to clean my mouth?</b>\n</string>
+    <string name="dentures_answer_9">Yes. Every morning and evening, brush your gums, tongue and the roof of your mouth with a soft brush. This removes plaque and helps the blood circulation in your mouth. If you wear partial dentures, it is even more important that you brush your teeth thoroughly every day.
+            This will help tooth decay and gum disease that can lead to you losing more of your teeth. Ask the dentist for advice if you are unsure.\n\n</string>
+    <string name="dentures_question_10"><b>If I have full dentures do I still need to visit the dentist?</b>\n</string>
+    <string name="dentures_answer_10">Yes, regular check ups are still important.  These examinations allow the dentist to spot any infections, mouth conditions or even mouth cancer at the earliest stages. Check with us about how often you should visit.\n\n</string>
+    <string name="dentures_question_11"><b>Do dentures last for ever?</b>\n</string>
+    <string name="dentures_answer_11">If you treat your dentures well, they should last for several years.
+        However, they will need to be re-lined or re-made because of normal wear and tear or because your bone and gum ridges have shrunk, causing your jaws to meet differently. Loose dentures can cause discomfort, and health problems including sores and infections, as well making eating and talking more difficult.
+        It is important to replace worn or badly fitting dentures before they cause problems.\n\n</string>
+    <string name="dentures_count">11</string>
+
+    <string name="drillfreedentistry_title">Drill Free Dentistry</string>
+    <string name="drillfreedentistry_desc">A lot of people fear the dentists drill. So what if you could have drill free dentistry?
+    Now you can!\n\n
+    We’ve introduced a new technique that, provided your teeth or your child’s teeth, are treated early enough, prevents the needs for fillings…and that drill.\n\n
+    Modern dentistry allows us to identify tooth decay in the early stages – before the rot sets in. We can then treat the tooth surface with a resin that protects the tooth and prevents the decay advancing. Fillings are avoided, healthy tooth tissue preserved, and no drills required! This is a pain free method of preventing further tooth decay so no injections are needed either.\n\n
+    The key thing is to visit the dentist regularly so we can spot any signs of decay before the need to drill.\n\n
+    To read more about the treatment, just click on the link:  <a href="http://uk.drilling-no-thanks.com/icon/">Drill free dentistry</a> \n\n</string>
+
+    <string name="facialaesthetics_title">Facial Aesthetics</string>
+    <string name="facialaesthetics_desc"><b>What is Facial Aesthetics?</b>\n
+    Facial rejuvenation treatments are used to help soften expression lines and define facial contours either by the careful use of wrinkle relaxation injections or injectable fillers. It’s not about how you look but how you feel. Facial aesthetics enhance your natural beauty and rejuvenate your skin, giving you a more youthful and radiant look.\n\n
+    We have new clinics now open in a number of our practices: Welwyn Garden City, Benfleet (Essex), Sheffield, Thanet, London (Fulham and Cromwell Rd sites), Cardiff, Bristol, Leigh, Crosby, Preston and Blackpool. More clinics will be opening very soon.\n
+    All of our treatments are carried out by trained, experienced nurse prescribers in a clean, safe and relaxed environment.\n
+    Below is a sample of some of the treatments we offer.\n\n</string>
+    <string name="facialaesthetics_question_1"><b>Wrinkle Relaxation Injections</b>\n</string>
+    <string name="facialaesthetics_answer_1">A treatment to temporarily improve the appearance of both moderate to severe frown lines between the brows and crow’s feet lines in adults.  Wrinkle relaxing injections can be used to relax certain facial muscles which means that the overlying skin stays smoother and creases gradually diminish.
+        The result is a more serene and youthful look.\n\n</string>
+    <string name="facialaesthetics_question_2"><b>Dermal Fillers</b>\n</string>
+    <string name="facialaesthetics_answer_2">Dermal fillers can be used to plump out the facial lines and increase the volume and hydration of the skin. They are used particularly to soften the lines around the mouth and chin area and for enhancing the shape and volume of the lips.
+            These types of fillers are naturally biodegradable and are therefore non-permanent. /n/n</string>
+    <string name="facialaesthetics_question_3"><b>Peels</b>\n</string>
+    <string name="facialaesthetics_answer_3">Facial peels are one of the most effective ways to treat signs of ageing, discolouration and UV damage. An active solution is applied to the surface of the skin which causes the superficial layer to peel off. The treatment exposes a new layer of healthy undamaged skin, resulting in a smoother texture and a more even skin tone.
+            Skin peels will also complement injectable treatments such as anti-wrinkle injections and dermal fillers.\n\n</string>
+    <string name="facialaesthetics_count">3</string>
+
+    <string name="generalcheckup_title">General Checkup</string>
+    <string name="generalcheckup_desc">Your first appointment with us will involve a comprehensive examination, followed by a detailed discussion of any treatment you may need.\n\n
+    It is important to tell the dentist before your examination, about your overall health, your dental concerns, and any fears or worries you may have about the visit.\n\n</string>
+    <string name="generalcheckup_question_1"><b>What should I tell the dentist during my first visit?</b>\n</string>
+    <string name="generalcheckup_answer_1">Your overall health — Tell your dentist if you’ve been diagnosed with any diseases or are taking any medicines. It is important to tell your dentist about all medicines you take. This includes prescriptions and over-the-counter medicines.\n\n
+        Your dental health — Before the examination starts, tell your dentist if:\n
+        - You think you have a new cavity\n
+        - Your teeth have become sensitive\n
+        - You feel lumps inside your mouth\n\n
+        Your fears — Many people have fears of the dentist that go back to childhood. Pain control and treatment techniques have improved greatly in recent years.
+                The things you fear most may not exist any longer, or there may be new and better ways of dealing with them. If you fear you have a particular disease or condition, let your dentist know. He or she can look for signs and either diagnose the problem or set your mind at ease.
+                ften, just talking about your fears will take some of the edge off.\n\n</string>
+    <string name="generalcheckup_question_2"><b>What happens during the first examination?</b>\n</string>
+    <string name="generalcheckup_answer_2">Our dentists will look at much more than just your teeth. They will check other areas inside and outside your mouth for signs of disease or other problems. For example:\n\n
+        <b>Head and neck</b> — Your dentist will check your head and neck, temporomandibular (jaw) joint, salivary glands and lymph nodes in your neck area. He or she will look at your face, neck and lips to make sure there are no unusual swellings, lip dryness, bleeding or other abnormalities that need to be checked further.\n
+        Your temporomandibular joint is the joint that guides your lower jaw when you open your mouth. It’s often called the TMJ. To see if the joint is working properly, your dentist will ask you to open and close your mouth and to move your lower jaw from side to side. You will be asked if you have had any pain or soreness in the joint. Your dentist may touch the joint while you open and close your mouth. This allows the dentist to feel for hitches or catches in movement that may indicate problemsYour dentist also will touch salivary glands and lymph nodes in your neck area. Swelling or tenderness there may indicate infection or disease.\n\n
+        <b>Soft tissue</b> — The soft tissues of the mouth include the tongue, the inside of the lips and cheeks, and the floor and roof of the mouth. Your dentist will check for spots, cuts, swellings, growths or other abnormal areas that may indicate problems with oral health.\n\n
+        <b>Periodontal</b> — A periodontal examination involves checking the gums and supporting structures of the teeth. First, your dentist will look at the gums for signs of redness or puffiness. He or she will poke them gently to see how easily they bleed. These symptoms may indicate gum disease. If your dentist determines that you have periodontal disease, he or she may refer you to a periodontist. This is a specialist who treats diseases of the gums. You will be able to see a periodontist at your own CFD practice\n\n
+        <b>Occlusion</b> — Your dentist may check how well your teeth fit together by examining your bite. First, you will be asked to bite naturally. If the teeth don’t seem to fit together properly, your dentist may have you bite down on special wax or paper. Your teeth make an impression in the wax that can help show how your teeth meet. The paper makes temporary marks on your teeth that show where your teeth come together.\n\n
+        <b>Clinical examination of teeth</b> — Your dentist will check for decay by looking at every tooth surface (using a mirror to see the back sides of teeth). He or she will also investigate your teeth with a tool called an explorer to detect cavities. Decayed tooth enamel is softer than healthy enamel. If you have fillings, permanent bridges, crowns or other restorations, your dentist will check to make certain that they remain whole and sound and that the teeth around them have no sign of decay.\n\n
+        <b>X-rays</b> – These will be taken to help your dentist look for decay (cavities) or other oral health problems that cannot be seen during the clinical exam. X-rays also provide the best way for the dentist to see a need for root canal treatment, or bone loss that may indicate advanced gum disease. After the x-ray you will be able to look at the result on you chair side screen. It is a great tool in helping you understand where problems may occur.\n\n</string>
+    <string name="generalcheckup_question_3"><b>What happens after the examination?</b>\n</string>
+    <string name="generalcheckup_answer_3">Treatment recommendations — If your dentist finds any problems, he or she will recommend steps to fix them. Your treatment plan will be printed out for you to take home. The dentist will explain each part of the treatment plan in detail and it is essential you feel comfortable and understand the plan and any associated costs.
+             The dentist will give you leaflets to take away, or you can check the treatment section of this website for more information.\n\n</string>
+    <string name="generalcheckup_question_4"><b>What about visiting the hygienist?</b>\n</string>
+    <string name="generalcheckup_answer_4">You may be referred to the hygienist for further cleaning. The hygienist typically will check your gums and teeth, clean and polish your teeth, and talk to you about caring for your teeth and gums properly at home.\n\n
+        <b>Cleaning</b> — The purpose of professional dental cleaning is to remove the hard calculus (also called tartar) from above and just below the gum line. Brushing and flossing at home removes plaque. Only dental instruments can remove calculus.\n\n
+        <b>Polishing</b> — After the calculus is removed, the crowns of your teeth (the parts that show) may be polished to remove plaque and surface stains. Typically, but not always, an abrasive substance is applied to the teeth with a small rotating rubber cup or brush. This helps to scrub away stains. The polishing substance will feel gritty in your mouth. You will be given chances to rinse.\n\n
+        <b>Prevention</b> — The hygienist may offer instructions for oral care at home based on the results of the exam. He or she may demonstrate how to brush and floss properly. Sometimes, the hygienist will teach you to use a disclosing agent to test your brushing ability. This shows up areas where teeth need to be more thoroughly cleaned.\n\n
+    </string>
+    <string name="generalcheckup_count">4</string>
+
+    <string name="orthodontics_title">Orthodontics</string>
+    <string name="orthodontics_desc">We offer both adult and child orthodontics, including adult invisible braces such as Six Month Smiles and clear aligners (eg. Invisalign, Smileline).\n\n
+    Below are some of the most commonly asked questions that we get asked about orthodontics.\n\n
+    If you have any other questions, or would like any additional information please don’t hesitate to contact your local CFD practice.\n\n</string>
+    <string name="orthodontics_question_1"><b>What are orthodontics?</b>\n</string>
+    <string name="orthodontics_answer_1">In simple terms…teeth straightening! Custom made braces and gentle pressure are used to gradually move the teeth into the correct position and then retain them there.\n\n</string>
+    <string name="orthodontics_question_2"><b>Why might I need orthodontic treatment?</b>\n</string>
+    <string name="orthodontics_answer_2">Orthodontic treatment not only improves the appearance of your teeth but can also helps the health of your teeth, gums and jaw joints, by spreading the biting pressure over all your teeth and getting rid of difficult to clean areas caused by crooked teeth.\n\n
+    When the teeth don’t meet correctly, this can put strain on the muscles of the jaw, causing jaw and joint problems and sometimes headaches.
+                Orthodontic treatment can help you to bite more evenly and reduce the strain.\n\n</string>
+    <string name="orthodontics_question_3"><b>At what age should I have orthodontic treatment?</b>\n</string>
+    <string name="orthodontics_answer_3">The best time is generally during childhood, but adults can have orthodontic treatment too – and more and more are doing so. Age is less important than having the right number of teeth. In children it may be necessary to wait for enough teeth to come through before starting treatment.\n\n
+    We also offer short term, adult orthodontic treatment for those wanting to make smaller straightening improvements to their smile.\n\n</string>
+    <string name="orthodontics_question_4"><b>Who carries out the orthodontic treatment?</b>\n</string>
+    <string name="orthodontics_answer_4">Our dentists are trained to carry out short term adult orthodontics. After attending a free CFD Orthodontic clinic, we will be able to assess if you are suitable for short term teeth straightening before you decide to proceed.\n\n
+    For child orthodontics or for longer term adult orthodontic treatment, we use a special team of CFD dentists who have extra qualifications in orthodontics and who visit our practices on a regional basis.\n\n</string>
+    <string name="orthodontics_question_5"><b>What does it involve?</b>\n</string>
+    <string name="orthodontics_answer_5">The most important thing is the initial assessment and examination. This will involve looking at your teeth, taking x-rays and making plaster models of your teeth.\n\n
+    We will then discuss with you what treatment is possible. Once you are sure you want to go ahead, the treatment can start (or in the case of a child, as soon as they have enough permanent teeth).\n\n</string>
+    <string name="orthodontics_question_6"><b>Will my orthodontic treatment involve tooth extraction?</b>\n</string>
+    <string name="orthodontics_answer_6">This depends on your teeth. You may not have enough room for all your permanent teeth. If so, you may need to have some removed to make space. We will let you know before treatment starts if this is the case.\n\n</string>
+    <string name="orthodontics_question_7"><b>What are the different sorts of braces?</b>\n</string>
+    <string name="orthodontics_answer_7">A removable brace is a plate that can be taken out to be cleaned. It has delicate wires and springs attached, which move the teeth using gentle pressure.\n\n
+    A functional brace works by using the power of your jaw muscles and can help with certain types of problem.\n\n
+    A fixed brace has brackets and bands which are temporarily stuck to the teeth. A flexible wire joins all the brackets and allows the teeth to be moved. You can’t take the appliance out yourself, so it is called a fixed appliance. Fixed braces are not always made of metal. Plastic and ceramic can be used, especially for adults.\n\n
+    Invisible braces are tough, clear plastic moulds, known s ‘aligners’. Several sets of specially moulded, slightly different aligners are made for each patient. Each set is worn for two weeks before being replaced with the next one. They are made from clear plastic, so they are nearly invisible. This means that no one need know you are straightening your teeth.\n\n
+    The aligners should be worn for 22 to 23 hours a day for the best results. They can be easily removed for eating, drinking, brushing, and for cleaning in between your teeth. You need to have all your adult teeth before you can have this treatment.\n\n</string>
+    <string name="orthodontics_question_8"><b>How long does it take?</b>\n</string>
+    <string name="orthodontics_answer_8">The length of treatment depends on how severe the problem is, and it may take anything from a few months (as in our short term adult teeth straightening) to several years. Most people can be treated in one to two years.\n\n</string>
+    <string name="orthodontics_question_9"><b>Do I need to do anything once my teeth are straightened?</b>\n</string>
+    <string name="orthodontics_answer_9">When treatment is finished your teeth need to be held in position for a time. This is called the ‘retention’ period, and you use ‘retainers’ to do this.\n\n
+    The retainers hold newly straightened teeth in position while the surrounding gum and bone settles. The retainers can be removable or fixed, depending on the original problem.\n\n
+    We will advise you when to wear these and for how long.\n\n</string>
+    <string name="orthodontics_question_10"><b>How often will I have to have appointments?</b>\n</string>
+    <string name="orthodontics_answer_10">Normally every four to six weeks as your braces will need adjusting.\n\n</string>
+    <string name="orthodontics_question_11"><b>Will it hurt?</b>\n</string>
+    <string name="orthodontics_answer_11">Your teeth may feel uncomfortable immediately after a brace has been adjusted, but this will settle. If the problem doesn’t go away, let us know and we may be able to carry out adjustments to help.\n\n</string>
+    <string name="orthodontics_question_12"><b>Can the orthodontic treatment damage my teeth?</b>\n</string>
+    <string name="orthodontics_answer_12">The treatment in itself will not cause damage, but poor cleaning and too many sugary foods and drinks can do.\n\n
+    Brackets, wires and braces can trap food and cause more plaque than usual to build up. So you need to clean your teeth and braces very thoroughly.\n\n
+    It is also important that your dentist checks your teeth regularly during the treatment to ensure you are managing to clean your teeth and brace effectively.\n\n
+    </string>
+    <string name="orthodontics_count">12</string>
+
+    <string name="rootcanal_title">Root Canal Therapy</string>
+    <string name="rootcanal_desc">You may have been told you need root canal therapy or treatment on your teeth but be unsure what this means.\n\n
+    Root canal therapy (also know as endodontics) is a sequence of treatment required when the blood or nerve supply of your tooth (called the ‘pulp’) is infected through decay or injury. It gets rid of the infected pulp, eliminating infection and protecting the tooth from future infection.\n\n
+    When the pulp becomes infected, the infection may spread and lead to a painful and inflamed abscess. The symptoms of an abscess can range from a dull ache to severe pain, and the tooth may be tender when you bite. If root canal treatment is not done, the infection will spread, the tooth may discolour and need to be taken out.\n\n
+    Root canal treatment is a skilled and time-consuming procedure. Our dentists can advise you on what is involved in your particular case. Most courses of treatment will involve two or more visits to the dentist.\n\n
+    To find out more, please read the guidance below or pop into your local practice for advice.\n\n</string>
+
+    <string name="rootcanal_question_1"><b>Does root canal therapy hurt?</b>\n</string>
+    <string name="rootcanal_answer_1">No. Usually, a local anaesthetic is used and it should feel no different to having an ordinary filling done.
+    There may be some tenderness afterwards but this should gradually get less over time.
+    You will probably feel relief as, if you have previously been suffering from an abscess, that can be extremely uncomfortable!\n\n</string>
+
+    <string name="rootcanal_question_2"><b>What stages of treatment will I need?</b>\n</string>
+    <string name="rootcanal_answer_2">Normally you will need at least two appointments.\n\n
+        In the first, the infected pulp is removed and any abscesses drained. The root canal is then cleaned and shaped ready for the filling. A temporary filling is put in and the tooth is left to settle.\n\n
+        In the second visit, the tooth is checked and, when all the infection has cleared, the tooth is permanently filled.\n\n</string>
+
+    <string name="rootcanal_question_3"><b>Will my tooth look different after root canal therapy?</b>\n</string>
+    <string name="rootcanal_answer_3">In the past, a root-filled tooth would often darken after treatment but with modern techniques this does not usually happen.
+    If there is any discolouration, there are several treatments that you can have to restore the natural appearance.\n\n</string>
+
+    <string name="rootcanal_question_4"><b>What is I choose not to go ahead with root canal treatment?</b>\n</string>
+    <string name="rootcanal_answer_4">The alternative is to have the tooth out. Once the pulp is destroyed it can’t heal, and it is not recommended to leave an infected tooth in the mouth.\n\n
+        Although some people would prefer to have the tooth out, it is usually best to keep as many natural teeth as possible in order to help keep the remaining teeth stable and retain the natural line of the jaw.\n\n</string>
+
+    <string name="rootcanal_question_5"><b>Will the tooth be stable after treatment?</b>\n</string>
+    <string name="rootcanal_answer_5">Yes but because a ‘dead’ tooth is more brittle, you may be advised to have a crown to provide extra support and strength to the tooth.\n\n</string>
+
+    <string name="rootcanal_question_6"><b>How do I care for my tooth after treatment?</b>\n</string>
+    <string name="rootcanal_answer_6">Root-canal treated teeth need to be cared for in just the same way as your other teeth.
+            Clean twice a day with a fluoride toothpaste, minimise consumption of sugary foods and drinks and have them only at mealtimes if possible, and have for regular dental check-ups.\n\n</string>
+    <string name="rootcanal_count">6</string>
+
+    <string name="scaleanpolish_title">Scale and Polish</string>
+    <string name="scaleanpolish_desc">Having a scale and polish is one of the quickest and safest ways to improve the overall health and appearance of your teeth.\n
+    Teeth can be superficially stained by many things like tea, coffee, red wine, berries, and tobacco and can sometimes be very obvious in your smile. Having a scale and polish will help remove those superficial stains that build up over time and return your teeth closer to the colour they should naturally be.\n
+    But did you know that there are other reasons why your teeth might benefit from having a scale and polish every 6 months?\n\n
+    Even when you have just finished cleaning your teeth, your teeth immediately start to get coated by proteins that are normally found in saliva. These proteins allow bacteria that cause cavities and gum disease to stick to teeth.\n
+    Over time, if not cleaned regularly, these bacteria continue to grow and form soft yellow plaque. This can be easily brushed off at first, but if left for long periods of time can harden into tartar (or ‘calculus’ as your dentist might also refer to it) which is then very difficult to remove by brushing alone. Plaque and tartar forms most commonly between teeth as they are the most commonly missed places when cleaning, but can form almost anywhere on teeth that have not been cleaned thoroughly on a regular basis.\n\n
+    Having a scale and polish will help get rid of the tartar build-up and will allow for much easier cleaning at home. That means a lower chance of tooth decay, a lower chance of bleeding gums and gum recession, and a lower chance of your teeth gradually becoming loose over time due to bone loss.\n\n
+    In fact, you can even improve bad breath issues noticeably just by having a scale and polish.\n\n
+    And finally, it will give you greater confidence in your smile.\n\n
+    Book yours today!\n\n
+    </string>
+
+    <string name="teethwhitening_title">Teeth Whitening</string>
+    <string name="teethwhitening_desc">Having a teeth whitening treatment can make you look healthier and younger. You’ll want to flash your smile at every available opportunity!\n\n
+    At Centre for Dentistry we use Enlighten teeth whitening, the best on the market, because we care about your teeth.
+        There are two options: In Practice whitening (application by the dentist) or Home Whitening.
+        In Practice whitening costs a little more but guarantees an excellent level of whiteness (known in the industry as a B1 shade).
+        If you ask in one of our practices, they can show you a colour shade sample.
+        Teeth whitening is generally suitable and safe for everyone and will not harm your teeth.\n\n</string>
+
+    <string name="teethwhitening_question_1"><b>Why do my teeth discolour?</b>\n</string>
+    <string name="teethwhitening_answer_1">Teeth discolour for a number of reasons. Very few people have brilliant-white teeth, and our teeth can get more discoloured as we get older.\n\n
+        Teeth can also be stained on the surface by food and drinks such as tea, coffee, red wine and blackcurrant. Smoking can also stain teeth.\n\n
+        ‘Calculus’ or tartar can also affect the colour of your teeth.
+        Some people may have staining under the surface, which can be caused by certain antibiotics or by tiny cracks in the teeth which take up stains.\n\n</string>
+
+    <string name="teethwhitening_question_2"><b>What does teeth whitening do?</b>\n</string>
+    <string name="teethwhitening_answer_2">Teeth whitening can be a highly effective, yet very simple way, of lightening the colour of teeth without removing any of the tooth surface.\n\n
+        Unlike traditional whitening, with the Enlighten system that we use, your end result isn’t determined by the starting colour of your teeth.
+        Regardless of where teeth start on the colour chart, the end result of an in-practice Enlighten treatment is guaranteed at a bright B1 result — the highest colour of white on the dentist’s colour chart. Enlighten is the only system available today that can offer that. N.B.
+                The dentist will first need to assess that your teeth are suitable for whitening.\n\n</string>
+
+    <string name="teethwhitening_question_3"><b>How long does the procedure take and what does it involve?</b>\n</string>
+    <string name="teethwhitening_answer_3">Professional In-Practice Teeth Whitening takes about 6 weeks and follows a four-stage process that cares for and protects teeth and guarantees your B1 result: Firstly the dentist makes an impression of your teeth. This is easy to do and means a bespoke tray is made which fits perfectly, ensuring comfort when it’s worn. At the same appointment, you are given a special dental serum to take home and use to prepare the teeth for treatment and stop the risk of any sensitivity. Once the tray has been crafted, then you are given the first treatment at the practice, kick-starting the whitening process. Over the following two weeks you use the whitening system at home as directed by the dentist.
+        This system carefully and gently brightens the teeth whilst protecting from damage and sensitivity at the same time.
+        After two weeks, you return to the dentist for the final treatment, which ensures that beautiful bright B1 guaranteed result.\n\n
+        Home whitening is quicker and takes 3-4 weeks in total. An impression is taken so that a bespoke tray can be carefully crafted and the serum is supplied as described above.
+        Once the tray is ready, it’s collected from the practice along with the rest of the whitening system and taken home to be used as directed for two weeks.
+        As the dentist doesn’t manage the process, B1 results can’t be guaranteed.\n\n</string>
+
+    <string name="teethwhitening_question_4"><b>Do I need to avoid certain food and drinks?</b>\n</string>
+    <string name="teethwhitening_answer_4">No! Normally during a whitening treatment, patients are advised to avoid anything that would stain a white t-shirt (coffee, red wine, curry and more).\n
+        However, when whitening with Enlighten you don’t need to follow any specific dietary advice and can continue to enjoy your favourite food and drink during the process.\n\n</string>
+
+    <string name="teethwhitening_question_5"><b>How much does it cost?</b>\n</string>
+    <string name="teethwhitening_answer_5">We are offering the Enlighten system to patients for world class teeth whitening at a price you simply won’t be able to beat anywhere else, just £159 (plus initial check-up £35) for the Home Kit or £399 for the Professional Whitening System.
+        Please do ask your dentist about this amazing system.\n\n</string>
+
+    <string name="teethwhitening_question_6"><b>Are my teeth suitable for whitening?</b>\n</string>
+    <string name="teethwhitening_answer_6">Tooth whitening only works on natural teeth. It will not work on any types of ‘false’ teeth such as dentures, crowns and veneers. The dentist will advise you if you are a suitable candidate for teeth whitening.\n\n
+        If your dentures are stained or discoloured visit your dental team and ask for them to be cleaned.\n\n
+    </string>
+    <string name="teethwhitening_count">6</string>
+
+    <string name="toothextraction_title">Tooth Extration</string>
+    <string name="toothextraction_desc">Sometimes it is necessary to have a tooth or teeth removed. This can be for a variety of reasons ranging from overcrowding, tooth decay, gum disease, a broken tooth or impacted wisdom teeth. These problems can cause increasing pain, bad breath and be unsightly if not treated.\n\n
+    Generally we can carry out the procedure in the dental surgery, but sometimes, if necessary, we may refer you for a hospital admission.\n\n
+    Depending on your teeth and your needs, the teeth can be removed in one appointment or over a few sessions. You can discuss this with us in advance, or if you are in for an emergency ‘get me out of pain’ appointment you may decide to have a tooth extracted there and then.\n\n
+    We can also advise you on your wisdom teeth if they are giving you problems.\n\n
+    Please be assured that we will always work with you when extracting a tooth. Pain is not our game! Let us know if you are particularly nervous and we will ensure that we help you as much as possible and give you the time you need to relax.\n\n
+    To fill the gap where your tooth once was there are a number of options that you may like to consider – dental implants, a bridge or dentures. Our dentists will be happy to advise you on the options, the pros and cons, and the relative costs.\n\n
+    Please read the advice below for what to do, and not to do, after having your tooth extracted\n\n</string>
+
+    <string name="toothextraction_question_1"><b>What should I do on the day after having my tooth out?</b>\n</string>
+    <string name="toothextraction_answer_1">Take it easy for the rest of the day. Rest as much as you can and don’t exercise.\n\n
+        When resting, keep your head up and,  for the first night using an extra pillow if possible.
+            It is also a good idea to use an old pillowcase, or put a towel on the pillow, in case you bleed a little.\n\n</string>
+
+    <string name="toothextraction_question_2"><b>Is there anything I should avoid?</b>\n</string>
+    <string name="toothextraction_answer_2">Avoid hot food or drinks until the anaesthetic wears off. This is important as you cannot feel pain properly and may scald your mouth. Also be careful not to chew your cheek. This is quite a common problem, which can happen when there is no feeling.\n\n
+        Avoid alcohol for at least 24 hours, as this can encourage bleeding and delay healing. Eat and drink lukewarm food as normal but avoid chewing on that area of your mouth.\n\n
+        Avoid eating on that side or letting your tongue disturb it. This can allow infection into the socket and affect healing.\n\n
+        If you are a smoker, try to avoid smoking for at least a day.\n\n</string>
+
+    <string name="toothextraction_question_3"><b>Can I rinse my mouth out?</b>\n</string>
+    <string name="toothextraction_answer_3">Do not be tempted to rinse the area for the first 24 hours.
+    It is important to allow the socket to heal, and you must be careful not to damage the blood clot.\n\n</string>
+
+    <string name="toothextraction_question_4"><b>Can I brush my teeth?</b>\n</string>
+    <string name="toothextraction_answer_4">It is important to keep your mouth clean after an extraction.
+                                However, you do need to be careful around the extraction site. Brush carefully.\n\n</string>
+
+    <string name="toothextraction_question_5"><b>What should I do if it bleeds?</b>\n</string>
+    <string name="toothextraction_answer_5">Some slight bleeding in the first day or so is normal. A small amount of blood mixed with a larger amount of saliva, can look more dramatic than it really is.\n\n
+        If you do notice bleeding, do not rinse out, but apply pressure to the socket. Bite firmly on a folded piece of clean cotton material such as a handkerchief for at least 15 minutes. Make sure this is placed directly over the extraction site and that the pad is replaced if necessary.\n\n
+        If the bleeding has not stopped after an hour or two, please get in touch with us.\n\n</string>
+
+    <string name="toothextraction_question_6"><b>Is there anything I can do to speed up the healing process?</b>\n</string>
+    <string name="toothextraction_answer_6">After the first 24 hours, you can gently rinse with a  teaspoon of salt in a glass of warm water twice a day to help to clean and heal the area. We recommend continuing this for at least a week.\n\n
+        It is important to have a healthy diet and possibly take a Vitamin C supplement to help your mouth to heal.\n\n</string>
+
+    <string name="toothextraction_question_7"><b>If I am in pain, can I take pain relief tablets?</b>\n</string>
+    <string name="toothextraction_answer_7">There will usually be some tenderness in the area for the first few days, and in most cases some simple pain relief is enough to ease the discomfort. What you would normally take for a headache should be enough, but do not take aspirin as this can lead to bleeding.\n\n
+        Occasionally, an infection can get in the socket and cause pain.
+        If you are getting a lot of pain,  it is important to see your dentist, who may place a dressing in the socket and prescribe a course of antibiotics to help relieve the infection.
+        You may also feel the sharp edge of the socket with your tongue and sometimes small pieces of bone may work their way to the surface of the socket. This is perfectly normal.\n\n
+    </string>
+    <string name="toothextraction_count">7</string>
+
+    <string name="veneers_title">Veneers</string>
+    <string name="veneers_desc">A veneer can improve the colour and shape of your teeth.  Great for disguising a discoloured or chipped tooth!\n\n
+    In practical terms, a veneer is a thin layer of porcelain that fits over the front surface of your tooth. A precise shade can be chosen to match your existing teeth or to lighten your front teeth. The porcelain covers the whole of the front of the tooth, with a thicker section replacing the broken part. Veneers can also be used to close small gaps, when orthodontics (braces) are not suitable. If one tooth is slightly out of position, a veneer can bring it into line with the others.\n\n
+    For more information on veneers, please read below or pop into your local CFD practice. Our friendly team will be glad to advise.\n\n</string>
+
+    <string name="veneers_question_1"><b>Is it easy to have a veneer fitted and what\'s involved?</b>\n</string>
+    <string name="veneers_answer_1">Veneers make teeth look natural and healthy. Very little preparation of the tooth is needed as veneers are very thin and are held in place by a special, strong adhesive. Some veneers don’t need any preparation at all. Generally a veneer will require two to three dental visits.\n\n
+        A small amount of the outer enamel surface of the tooth may be removed in the first visit – the same as the thickness of the veneer to be fitted – so that the tooth stays the same size. A local anaesthetic may be used to make sure that there is no discomfort, but often this is not required. Your tooth will look the same but just feel a bit rougher. Once the tooth has been prepared, the dental team will take an impression of the tooth so that the veneer can be custom made to fit. The colour of the surrounding teeth will be matched on a shade guide to get the right colour and ensure that the veneer will look like a natural tooth.\n\n
+        In the second visit, the dentist will show you the veneer to check you are happy with the shade and then bond it to the tooth.
+            Our dental team may want to check and polish your venner a week or so after it is fitted, and make sure that you are happy with it.\n\n</string>
+
+    <string name="veneers_question_2"><b>How long should my veneer last?</b>\n</string>
+    <string name="veneers_answer_2">Veneers should last for many years but, as with normal teeth, they can chip or break, so you do need to take care of them.
+            Small chips can be repaired, or a new veneer fitted if necessary.\n\n</string>
+
+    <string name="veneers_question_3"><b>What\'s the alternative to a veneer?</b>\n</string>
+    <string name="veneers_answer_3">Natural-coloured fillings can be used for minor repairs to front teeth but sometimes the tooth will not support the filling and it can be very difficult for broken tooth corners. You will always see a join between the tooth and the filling material, so they are not as attractive as veneers.\n\n
+        Crowns are better when teeth which need to be strengthened – either because they have broken, have been weakened by a very large filling, and sometimes more extensive root canal treatment may be required if the tooth’s nerve has been damaged.\n\n</string>
+    <string name="veneers_count">3</string>
+
+    <string name="whitefillings_title">White Fillings</string>
+    <string name="whitefillings_desc">Fillings are needed when tooth decay has eroded the enamel leaving a cavity.\n\n
+    Nowadays, many prefer to go for white fillings and avoid silver amalgam fillings that might show when you smile or laugh.\n\n
+    If you worried by a visit to the dentist, please be assured that we are really good with nervous patients…and that modern, pain free dentistry is what we practice! Just let us know if you are nervous and we’ll do our best to help you. We won’t rush you and we’ll always give you options. You are in control!\n\n
+    Read more about white fillings here:\n\n</string>
+
+    <string name="whitefillings_question_1"><b>Are white fillings as good as silver amalgams?</b>\n</string>
+    <string name="whitefillings_answer_1">White fillings used to be less long lasting than silver amalgam fillings but nowadays they are almost as good as silver amalgam. How long the white filling lasts will depend on where it is in your mouth and how heavily your teeth come together when you bite.
+        We can advise you according to where in your mouth the filling is required and the state of the tooth.\n\n</string>
+
+    <string name="whitefillings_question_2"><b>How much will a white filling cost me?</b>\n</string>
+    <string name="whitefillings_answer_2">We charge from £70 (£63 if you are one of our Dental Plan members).
+            The cost varies depending on the size and type of white filling used and the time it takes to complete the treatment.
+            We will give you a clear price prior to you deciding on treatment.\n\n</string>
+
+    <string name="whitefillings_question_3"><b>Should I replace my old silver amalgam fillings with white ones?</b>\n</string>
+    <string name="whitefillings_answer_3">It is usually best to change fillings only when they need replacing. If your filling does need replacing, you can ask to have a white filling instead and your dentist will advise you accordingly.\n\n
+    </string>
+    <string name="whitefillings_count">3</string>
+
+    <string name="message_to_treatments_details">Hi ! Would like us to call you to discuss more about this treatment in detail?</string>
+    <string name="message_to_treatments_type">Which type of treatment you would like to prefer?</string>
+    <string name="message_to_user_availability">When you are available?</string>
+    <string name="compose_message">\tWhen you refer a friend or colleague to us at CFD, we like to say thank you.\n\n
+        \tGet 10% on your next visit, So get referring to qualify for our great rewards!</string>
+
+
 </resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Available Time"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:padding="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="When you can be available?"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorPrimaryDarker"
+            android:text="ANY TIME"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/ap_stg3_anytime"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorPrimaryDarker"
+            android:text="MORNING"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/ap_stg3_morning"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorPrimaryDarker"
+            android:text="AFTERNOON"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/ap_stg3_afternoon"
+
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorPrimaryDarker"
+            android:text="EVENING"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/ap_stg3_evening"
+
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorPrimaryDarker"
+            android:text="BACK"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/ap_stg3_back"
+
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorPrimaryDarker"
+            android:text="CANCEL"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/ap_stg3_cancel"
+
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

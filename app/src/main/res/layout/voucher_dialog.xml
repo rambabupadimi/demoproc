@@ -36,7 +36,7 @@
             android:textSize="18sp"
             android:textStyle="bold"
             android:layout_toRightOf="@+id/vw_code"
-            android:id="@+id/vw_value"/>
+            android:id="@+id/vw_dialog_code"/>
        </RelativeLayout>
         </LinearLayout>
 
@@ -44,20 +44,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Some new voucher here"
-            android:gravity="center_horizontal"/>
+            android:gravity="center_horizontal"
+            android:id="@+id/vw_dialog_title"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Here it is..."
             android:gravity="center_horizontal"
-            android:padding="12dp"/>
+            android:padding="12dp"
+            android:id="@+id/vw_dialog_text"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorPink"
             android:text="CANCEL"
-            android:id="@+id/vw_cancel"
+            android:id="@+id/vw_dialog_cancel"
             android:textColor="@color/colorWhite"/>
 
     </LinearLayout>

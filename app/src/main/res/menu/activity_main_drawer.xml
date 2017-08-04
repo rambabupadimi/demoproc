@@ -42,6 +42,13 @@
             android:icon="@drawable/ic_local_offer_white_24dp"
             android:title="@string/nav_refer_friend" />
 
+
+        <item
+            android:id="@+id/nav_request_callback"
+            android:icon="@drawable/ic_local_offer_white_24dp"
+            android:title="@string/nav_request_callback" />
+
+
     </group>
 <!--
     <item android:title="Other">

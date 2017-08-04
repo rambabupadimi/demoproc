@@ -172,7 +172,8 @@
                             android:text="CALL TO BOOK"
                             android:textColor="@color/colorPink"
                             android:layout_marginTop="12dp"
-                            android:layout_gravity="center_horizontal"/>
+                            android:layout_gravity="center_horizontal"
+                            android:id="@+id/appointment_emergency"/>
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
 

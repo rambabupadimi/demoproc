@@ -9,10 +9,17 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.cenrefordentistry.LandingPage;
 import com.cenrefordentistry.R;
 import com.cenrefordentistry.RegisterDob;
+import com.cenrefordentistry.models.VoucherModel;
+
+import org.w3c.dom.Text;
+
+import java.util.List;
 
 /**
  * Created by Ramu on 15-07-2017.
@@ -21,8 +28,11 @@ import com.cenrefordentistry.RegisterDob;
 public class VoucherWalletAdapter extends RecyclerView.Adapter<VoucherWalletAdapter.CustomViewHolder>{
     private Context mContext;
     private String TAG = "VoucherWalletAdapter.java";
-    public VoucherWalletAdapter(Context context) {
+
+    List<VoucherModel> voucherModelList;
+    public VoucherWalletAdapter(Context context,List<VoucherModel> voucherModelList) {
         this.mContext       =   context;
+        this.voucherModelList   =   voucherModelList;
     }
 
     @Override
@@ -36,45 +46,60 @@ public class VoucherWalletAdapter extends RecyclerView.Adapter<VoucherWalletAdap
 
     @Override
     public void onBindViewHolder(final CustomViewHolder holder, int position) {
-        holder.vwLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-              //  showVoucherDialog();
-            }
-         });
 
-        holder.detail.setOnClickListener(new View.OnClickListener() {
+
+        final VoucherModel voucherModel = voucherModelList.get(position);
+        holder.voucher_title.setText(voucherModel.getVoucher_title());
+        holder.voucher_description.setText(voucherModel.getVoucher_text());
+        holder.voucher_expires.setText(voucherModel.getVoucher_valid_until_date().split("T")[0]);
+        holder.voucher_press_for_detail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showVoucherDialog();
+                Toast.makeText(mContext,"click me",Toast.LENGTH_LONG).show();
+                showVoucherDialog(voucherModel);
             }
         });
+
     }
     @Override
     public int getItemCount() {
-        //   return (null != filtered_items ? filtered_items.size() : 0);
-        return 5;
+        return (null != voucherModelList ? voucherModelList.size() : 0);
+
     }
     public class CustomViewHolder extends RecyclerView.ViewHolder
     {
         RelativeLayout vwLayout;
         Button detail;
+        TextView voucher_title,voucher_description,voucher_expires,voucher_press_for_detail;
+
         public CustomViewHolder(View itemView) {
             super(itemView);
-            vwLayout = (RelativeLayout) itemView.findViewById(R.id.vw_parent_layout);
-            detail  = (Button) itemView.findViewById(R.id.vw_wallet_detail);
+            vwLayout                    =   (RelativeLayout) itemView.findViewById(R.id.vw_parent_layout);
+            detail                      =   (Button) itemView.findViewById(R.id.vw_wallet_detail);
+            voucher_title               =   (TextView) itemView.findViewById(R.id.vw_heading);
+            voucher_description         =   (TextView) itemView.findViewById(R.id.vw_description);
+            voucher_expires             =   (TextView) itemView.findViewById(R.id.vw_expires);
+            voucher_press_for_detail    =   (Button) itemView.findViewById(R.id.vw_wallet_detail);
         }
     }
 
 
-    private void showVoucherDialog()
+    private void showVoucherDialog(VoucherModel voucherModel)
     {
         try {
             final AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
             final AlertDialog alertDialog = builder.create();
             LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             View view = inflater.inflate(R.layout.voucher_dialog, null);
-            Button cancel = (Button) view.findViewById(R.id.vw_cancel);
+            TextView title = (TextView) view.findViewById(R.id.vw_dialog_title);
+            TextView description = (TextView) view.findViewById(R.id.vw_dialog_text);
+            TextView code = (TextView) view.findViewById(R.id.vw_dialog_code);
+
+            title.setText(voucherModel.getVoucher_title());
+            description.setText(voucherModel.getVoucher_text());
+            code.setText(voucherModel.getVoucher_code());
+
+            Button cancel = (Button) view.findViewById(R.id.vw_dialog_cancel);
             cancel.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

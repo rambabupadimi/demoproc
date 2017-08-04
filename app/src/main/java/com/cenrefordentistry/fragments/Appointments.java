@@ -13,6 +13,7 @@ import android.widget.Button;
 import com.cenrefordentistry.LandingPage;
 import com.cenrefordentistry.R;
 import com.cenrefordentistry.RegisterDob;
+import com.cenrefordentistry.activities.BookAnAppointmentActivity;
 import com.cenrefordentistry.activities.ExistingAppointments;
 
 /**
@@ -21,7 +22,7 @@ import com.cenrefordentistry.activities.ExistingAppointments;
 
 public class Appointments extends Fragment {
 
-    Button existingAppointmentButton,bookanappointmentButton;
+    Button existingAppointmentButton,bookanappointmentButton,appointmentemergencyButton;
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_appointments,container, false);
@@ -42,7 +43,16 @@ public class Appointments extends Fragment {
        bookanappointmentButton.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-                appointmentStage1();
+                Intent intent = new Intent(getContext(), BookAnAppointmentActivity.class);
+                startActivity(intent);
+           }
+       });
+
+       appointmentemergencyButton = (Button) view.findViewById(R.id.appointment_emergency);
+       appointmentemergencyButton.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+            showAppointmentEmergency();
            }
        });
 
@@ -50,26 +60,20 @@ public class Appointments extends Fragment {
     }
 
 
-
-    private void appointmentStage2()
+    private void showAppointmentEmergency()
     {
         try {
             final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
             final AlertDialog alertDialog = builder.create();
             LayoutInflater inflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            View view = inflater.inflate(R.layout.appointment_stage_2, null);
-
-            Button mydentist = (Button) view.findViewById(R.id.ap_my_dentist);
-            Button anydentist =(Button) view.findViewById(R.id.ap_any_dentist);
-
-            Button cancel = (Button) view.findViewById(R.id.ap_stage2_cancel);
+            View view = inflater.inflate(R.layout.show_appointment_emergency, null);
+            Button cancel = (Button) view.findViewById(R.id.ap_emg_cancel);
             cancel.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     alertDialog.dismiss();
                 }
             });
-
 
             alertDialog.setView(view);
             alertDialog.show();
@@ -81,56 +85,5 @@ public class Appointments extends Fragment {
 
     }
 
-    private  void appointmentStage1()
-    {
-        try {
-            final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-            final AlertDialog alertDialog = builder.create();
-            LayoutInflater inflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            View view = inflater.inflate(R.layout.appointment_stage_1, null);
 
-            Button checkup = (Button) view.findViewById(R.id.ap_checkup);
-            Button hygiene =(Button) view.findViewById(R.id.ap_hygiene);
-            Button emergency = (Button)view.findViewById(R.id.ap_emergency);
-
-            checkup.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                   alertDialog.dismiss();
-                    appointmentStage2();
-                }
-            });
-
-            hygiene.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    alertDialog.dismiss();
-                    appointmentStage2();
-                }
-            });
-            emergency.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    alertDialog.dismiss();
-                    appointmentStage2();
-                }
-            });
-
-            Button cancel = (Button) view.findViewById(R.id.ap_cancel);
-            cancel.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    alertDialog.dismiss();
-                }
-            });
-
-
-            alertDialog.setView(view);
-            alertDialog.show();
-            alertDialog.setCancelable(false);
-        }catch (Exception e)
-        {
-            e.printStackTrace();
-        }
-    }
 }

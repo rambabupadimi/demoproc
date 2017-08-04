@@ -41,7 +41,8 @@
         android:layout_marginLeft="48dp"
         android:layout_marginRight="48dp"
         android:padding="12dp"
-        android:hint="24 Nov 1985"/>
+        android:text="24111985"
+/>
 
     <Button
         android:layout_width="match_parent"
