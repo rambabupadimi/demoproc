@@ -32,7 +32,7 @@ import com.cenrefordentistry.helper.FullScreenVideoView;
 
 public class SplashScreen extends AppCompatActivity {
     // Splash screen timer
-    FullScreenVideoView videoView;
+   VideoView videoView;
     RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(
             RelativeLayout.LayoutParams.MATCH_PARENT,
             RelativeLayout.LayoutParams.MATCH_PARENT
@@ -54,7 +54,7 @@ public class SplashScreen extends AppCompatActivity {
          startActivity(intent);
         }
         else {
-            videoView = (FullScreenVideoView) findViewById(R.id.videoView);
+            videoView = (VideoView) findViewById(R.id.videoView);
             getWindow().setFormat(PixelFormat.UNKNOWN);
             String uripath = "android.resource://com.cenrefordentistry/" + R.raw.splashvideo;
             Uri uri = Uri.parse(uripath);
@@ -69,7 +69,7 @@ public class SplashScreen extends AppCompatActivity {
                 }
             });
 
-            enterFullScreen();
+       //     enterFullScreen();
         }
     }
 

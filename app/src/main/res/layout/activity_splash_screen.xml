@@ -7,13 +7,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.cenrefordentistry.helper.FullScreenVideoView android:id="@+id/videoView"
+    <VideoView android:id="@+id/videoView"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
-    </com.cenrefordentistry.helper.FullScreenVideoView>
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="-220dp"
+        android:layout_marginRight="-220dp">
+    </VideoView>
 
 </RelativeLayout>
