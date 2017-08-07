@@ -45,8 +45,7 @@ public class TreatmentInfoAdapter extends RecyclerView.Adapter<TreatmentInfoAdap
 
         final TreatmentInfoModel treatmentInfoModel = treatmentInfoModelList.get(position);
 
-        if(treatmentInfoModel.getTreatment_type_code().toString().equalsIgnoreCase("ANY") ||
-                treatmentInfoModel.getTreatment_type_code().toString().equalsIgnoreCase("P")) {
+
             holder.title.setText(treatmentInfoModel.getTreatment_type_text());
             holder.code.setText(treatmentInfoModel.getTreatment_type_code());
             String color = treatmentInfoModel.getTreatment_type_colour().toString();
@@ -72,53 +71,61 @@ public class TreatmentInfoAdapter extends RecyclerView.Adapter<TreatmentInfoAdap
             holder.tinfCardview.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(mContext, TreatmentInfoFullDetails.class);
-                    String title = treatmentInfoModel.getTreatment_type_text();
-                    if (title.toString().equalsIgnoreCase("Bridges and Partial Dentures")) {
-                        title = "bridgesandpartialdentures";
-                    } else if (title.toString().equalsIgnoreCase("Children's Dental Treatment")) {
-                        title = "childrendental";
-                    } else if (title.toString().equalsIgnoreCase("Dental Crowns")) {
-                        title = "dentalcrown";
-                    } else if (title.toString().equalsIgnoreCase("Dental Implant")) {
-                        title = "dentalimplant";
-                    } else if (title.toString().equalsIgnoreCase("Dentures")) {
-                        title = "dentures";
-                    } else if (title.toString().equalsIgnoreCase("Drill Free Dentistry")) {
-                        title = "drillfreedentistry";
-                    } else if (title.toString().equalsIgnoreCase("Facial Aesthetics")) {
-                        title = "facialaesthetics";
-                    } else if (title.toString().equalsIgnoreCase("Checkups")) {
-                        title = "generalcheckup";
-                    } else if (title.toString().equalsIgnoreCase("Orthodontics")) {
-                        title = "orthodontics";
-                    } else if (title.toString().equalsIgnoreCase("Root Canal Therapy")) {
-                        title = "rootcanal";
-                    } else if (title.toString().equalsIgnoreCase("Scale and Polish")) {
-                        title = "scaleanpolish";
-                    } else if (title.toString().equalsIgnoreCase("Teeth Whitening")) {
-                        title = "teethwhitening";
-                    } else if (title.toString().equalsIgnoreCase("Tooth Extraction")) {
-                        title = "toothextraction";
-                    } else if (title.toString().equalsIgnoreCase("Veneers")) {
-                        title = "veneers";
-                    } else if (title.toString().equalsIgnoreCase("White Fillings")) {
-                        title = "whitefillings";
-                    } else if (title.toString().equalsIgnoreCase("Products")) {
-                        title = "products";
-                    }
-                    intent.putExtra(AppConstants.TITLE, title + "_title");
-                    intent.putExtra(AppConstants.DESCRIPTION, title + "_desc");
-                    intent.putExtra(AppConstants.COLOR_CODE, treatmentInfoModel.getTreatment_type_colour());
-                    intent.putExtra(AppConstants.IMAGE, treatmentInfoModel.getTreatment_type_code());
-                    mContext.startActivity(intent);
+
+
+                   if(treatmentInfoModel.getTreatment_type_code().toString().equalsIgnoreCase("P") ||
+                           treatmentInfoModel.getTreatment_type_code().toString().equalsIgnoreCase("ANY")
+                           ) {
+                       Toast.makeText(mContext,"Data not available",Toast.LENGTH_LONG).show();
+
+                   }
+                   else
+                   {
+                       Intent intent = new Intent(mContext, TreatmentInfoFullDetails.class);
+                       String title = treatmentInfoModel.getTreatment_type_text();
+                       if (title.toString().equalsIgnoreCase("Bridges and Partial Dentures")) {
+                           title = "bridgesandpartialdentures";
+                       } else if (title.toString().equalsIgnoreCase("Children's Dental Treatment")) {
+                           title = "childrendental";
+                       } else if (title.toString().equalsIgnoreCase("Dental Crowns")) {
+                           title = "dentalcrown";
+                       } else if (title.toString().equalsIgnoreCase("Dental Implant")) {
+                           title = "dentalimplant";
+                       } else if (title.toString().equalsIgnoreCase("Dentures")) {
+                           title = "dentures";
+                       } else if (title.toString().equalsIgnoreCase("Drill Free Dentistry")) {
+                           title = "drillfreedentistry";
+                       } else if (title.toString().equalsIgnoreCase("Facial Aesthetics")) {
+                           title = "facialaesthetics";
+                       } else if (title.toString().equalsIgnoreCase("Checkups")) {
+                           title = "generalcheckup";
+                       } else if (title.toString().equalsIgnoreCase("Orthodontics")) {
+                           title = "orthodontics";
+                       } else if (title.toString().equalsIgnoreCase("Root Canal Therapy")) {
+                           title = "rootcanal";
+                       } else if (title.toString().equalsIgnoreCase("Scale and Polish")) {
+                           title = "scaleanpolish";
+                       } else if (title.toString().equalsIgnoreCase("Teeth Whitening")) {
+                           title = "teethwhitening";
+                       } else if (title.toString().equalsIgnoreCase("Tooth Extraction")) {
+                           title = "toothextraction";
+                       } else if (title.toString().equalsIgnoreCase("Veneers")) {
+                           title = "veneers";
+                       } else if (title.toString().equalsIgnoreCase("White Fillings")) {
+                           title = "whitefillings";
+                       } else if (title.toString().equalsIgnoreCase("Products")) {
+                           title = "products";
+                       }
+                       intent.putExtra(AppConstants.TITLE, title + "_title");
+                       intent.putExtra(AppConstants.DESCRIPTION, title + "_desc");
+                       intent.putExtra(AppConstants.COLOR_CODE, treatmentInfoModel.getTreatment_type_colour());
+                       intent.putExtra(AppConstants.IMAGE, treatmentInfoModel.getTreatment_type_code());
+                       mContext.startActivity(intent);
+
+                   }
+
                 }
             });
-        }
-        else
-        {
-            Toast.makeText(mContext,"Information not available",Toast.LENGTH_LONG).show();
-        }
     }
     @Override
     public int getItemCount() {
