@@ -118,4 +118,29 @@ private String TAG = "VoucherDAO";
     }
 
 
+
+    public int updateVoucher(VoucherModel voucherModel)
+    {
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+
+        values.put(COLUMN_VOUCHER_ID,voucherModel.getVoucher_id());
+        values.put(COLUMN_VOUCHER_TYPE_ID,voucherModel.getVoucher_type_id());
+        values.put(COLUMN_VOUCHER_TREATMENT_TYPE_ID,voucherModel.getVoucher_treatment_type_id());
+        values.put(COLUMN_VOUCHER_TEXT,voucherModel.getVoucher_text());
+        values.put(COLUMN_VOUCHER_VALID_FROM_DATE,voucherModel.getVoucher_valid_from_date());
+        values.put(COLUMN_VOUCHER_VALID_UNTIL_DATE,voucherModel.getVoucher_valid_until_date());
+        values.put(COLUMN_VOUCHER_FIXED_AMOUNT,voucherModel.getVoucher_fixed_amount());
+        values.put(COLUMN_VOUCHER_PERCENT_AMOUNT,voucherModel.getVoucher_percent_amount());
+        values.put(COLUMN_VOUCHER_CODE,voucherModel.getVoucher_code());
+        values.put(COLUMN_VOUCHER_PRODUCT_CODE,voucherModel.getVoucher_product_code());
+        values.put(COLUMN_VOUCHER_IS_REDEEMED,voucherModel.getVoucher_is_redeemed());
+        values.put(COLUMN_VOUCHER_TITLE,voucherModel.getVoucher_title());
+        values.put(COLUMN_VOUCHER_IS_READ,1);
+        values.put(COLUMN_VOUCHER_IS_ACTIVE,voucherModel.getVoucher_is_active());
+        int status = db.update(TABLE_VOUCHERS,values, COLUMN_VOUCHER_ID + "=?", new String[]{String.valueOf(voucherModel.getVoucher_id())});
+        return status;
+    }
+
 }

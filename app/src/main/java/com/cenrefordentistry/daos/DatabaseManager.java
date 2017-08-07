@@ -34,7 +34,7 @@ public class DatabaseManager extends SQLiteOpenHelper implements AppConstants , 
 
         String TABLE_APPOINTMENTS_QUERY = "CREATE TABLE IF NOT EXISTS  "+DatabaseFields.TABLE_APPOINTMENTS+"  ( " +
                 " appointment_local_id      INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                " appointment_server_id     INTEGER, "+
+                " appointment_id     INTEGER, "+
                 " appointment_provider_id   INTEGER, "+
                 " appointment_provider_text TEXT, "+
                 " appointment_site_id       INTEGER, "+
@@ -43,7 +43,7 @@ public class DatabaseManager extends SQLiteOpenHelper implements AppConstants , 
                 " appointment_remote_id     INTEGER, "+
                 " appointment_status_id     INTEGER, "+
                 " appointment_datetime      DATE, "+
-                " appointment_booking_charge FLOAT, "+
+                " appointment_booking_price FLOAT, "+
                 " is_read                   INTEGER )";
 
 

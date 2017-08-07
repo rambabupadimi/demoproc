@@ -54,7 +54,7 @@
         android:layout_below="@+id/vw_expires"
         android:padding="12dp"
         android:text="Here it is....."
-        android:textColor="@color/colorPink"
+
         android:id="@+id/vw_description"/>
     <Button
         android:layout_width="match_parent"

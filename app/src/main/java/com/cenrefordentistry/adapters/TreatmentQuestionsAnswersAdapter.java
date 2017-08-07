@@ -60,7 +60,7 @@ public class TreatmentQuestionsAnswersAdapter extends RecyclerView.Adapter<Treat
                 }
                 else
                 {
-                    holder.collapse_expand.setImageDrawable(mContext.getResources().getDrawable(R.drawable.ic_keyboard_arrow_left_white_24dp));
+                    holder.collapse_expand.setImageDrawable(mContext.getResources().getDrawable(R.drawable.ic_keyboard_arrow_right_white_24dp));
                     //holder.answer.setVisibility(View.GONE);
                     is_collapsed = true;
                     collapse(holder.answer);

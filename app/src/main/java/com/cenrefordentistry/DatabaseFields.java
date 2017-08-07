@@ -83,6 +83,19 @@ public interface DatabaseFields {
     public String COLUMN_MESSAGE_IS_READ            =   "message_is_read";
 
 
+// Appointmetns table
+
+
+    public String COLUMN_APPOINTMENT_ID                 =    "appointment_id";
+    public String COLUMN_APPOINTMENT_PROVIDER_TEXT    =    "appointment_provider_text";
+    public String COLUMN_APPOINTMENT_PROVIDER_ID        =   "appointment_provider_id";
+    public String COLUMN_APPOINTMENT_SITE_ID        =   "appointment_site_id";
+    public String COLUMN_APPOINTMENT_PERSON_ID        =   "appointment_person_id";
+    public String COLUMN_APPOINTMENT_TYPE_ID        =   "appointment_type_id";
+    public String COLUMN_APPOINTMENT_REMOTE_ID        =   "appointment_remote_id";
+    public String COLUMN_APPOINTMENT_STATUS_ID        =   "appointment_status_id";
+    public String COLUMN_APPOINTMENT_DATETIME        =   "appointment_datetime";
+    public String COLUMN_APPOINTMENT_BOOKING_PRICE        =   "appointment_booking_price";
 
 
 

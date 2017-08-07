@@ -13,6 +13,7 @@ import android.widget.TextView;
 import com.cenrefordentistry.R;
 import com.cenrefordentistry.activities.LongMessageWithCTA;
 import com.cenrefordentistry.activities.LongMessageWithNoCTA;
+import com.cenrefordentistry.daos.MessagesDAO;
 import com.cenrefordentistry.models.MessagesModel;
 
 import java.util.List;
@@ -24,11 +25,12 @@ import java.util.List;
 public class MessagesAdapter extends RecyclerView.Adapter<MessagesAdapter.CustomViewHolder>{
     private Context mContext;
     private String TAG = "MyPracticeAdapter.java";
-
+    MessagesDAO messagesDAO;
     List<MessagesModel> messagesModelList;
     public MessagesAdapter(Context context,List<MessagesModel> messagesModelList) {
         this.mContext       =   context;
         this.messagesModelList = messagesModelList;
+        messagesDAO =   new MessagesDAO(mContext);
     }
 
     @Override
@@ -48,32 +50,57 @@ public class MessagesAdapter extends RecyclerView.Adapter<MessagesAdapter.Custom
         holder.description.setText(messagesModel.getMessage_text());
         holder.date.setText(messagesModel.getMessage_valid_until_date().split("T")[0]);
 
+        if(messagesModel.getMessage_is_read()==1)
+            holder.messageRead.setBackgroundColor(mContext.getResources().getColor(R.color.colorGray));
+
         holder.messageRead.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(messagesModel.getMessage_type_id()==0 || messagesModel.getMessage_type_id()==4)
                 {
-                    noCallActionPopup();
+                    noCallActionPopup(messagesModel,holder);
+
                 }
                 else if(messagesModel.getMessage_type_id()==1)
                 {
-                    popupWithCTA();
+                    popupWithCTA(messagesModel,holder);
                 }
                 else if(messagesModel.getMessage_type_id()==2)
                 {
+                    holder.messageRead.setBackgroundColor(mContext.getResources().getColor(R.color.colorGray));
+                    messagesDAO.updateMessageIsRead(messagesModel);
                     Intent intent = new Intent(mContext, LongMessageWithNoCTA.class);
                     mContext.startActivity(intent);
                 }
                 else if(messagesModel.getMessage_type_id()==3)
                 {
                     Intent intent = new Intent(mContext, LongMessageWithCTA.class);
+                    messagesDAO.updateMessageIsRead(messagesModel);
                     mContext.startActivity(intent);
+                    holder.messageRead.setBackgroundColor(mContext.getResources().getColor(R.color.colorGray));
+
                 }
+            }
+        });
+
+
+        holder.messageDelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MessagesDAO messagesDAO = new MessagesDAO(mContext);
+                messagesDAO.updateMessageDelete(messagesModel);
+                removeAt(position);
             }
         });
     }
 
-        private void noCallActionPopup()
+    public void removeAt(int position) {
+        messagesModelList.remove(position);
+        notifyItemRemoved(position);
+        notifyItemRangeChanged(position, messagesModelList.size());
+    }
+
+        private void noCallActionPopup(final MessagesModel messagesModel, final CustomViewHolder holder)
         {
           try {
               final AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
@@ -85,6 +112,9 @@ public class MessagesAdapter extends RecyclerView.Adapter<MessagesAdapter.Custom
                   @Override
                   public void onClick(View v) {
                       alertDialog.dismiss();
+                      holder.messageRead.setBackgroundColor(mContext.getResources().getColor(R.color.colorGray));
+                      messagesDAO.updateMessageIsRead(messagesModel);
+
                   }
               });
 
@@ -97,7 +127,7 @@ public class MessagesAdapter extends RecyclerView.Adapter<MessagesAdapter.Custom
           }
 
         }
-      private void popupWithCTA()
+      private void popupWithCTA(final MessagesModel messagesModel, final CustomViewHolder holder)
       {
           try {
               final AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
@@ -109,6 +139,9 @@ public class MessagesAdapter extends RecyclerView.Adapter<MessagesAdapter.Custom
                   @Override
                   public void onClick(View v) {
                       alertDialog.dismiss();
+                      holder.messageRead.setBackgroundColor(mContext.getResources().getColor(R.color.colorGray));
+                      messagesDAO.updateMessageIsRead(messagesModel);
+
                   }
               });
 

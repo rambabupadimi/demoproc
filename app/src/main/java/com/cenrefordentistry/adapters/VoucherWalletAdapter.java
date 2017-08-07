@@ -2,6 +2,7 @@ package com.cenrefordentistry.adapters;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -15,6 +16,7 @@ import android.widget.Toast;
 import com.cenrefordentistry.LandingPage;
 import com.cenrefordentistry.R;
 import com.cenrefordentistry.RegisterDob;
+import com.cenrefordentistry.daos.VoucherDAO;
 import com.cenrefordentistry.models.VoucherModel;
 
 import org.w3c.dom.Text;
@@ -28,11 +30,12 @@ import java.util.List;
 public class VoucherWalletAdapter extends RecyclerView.Adapter<VoucherWalletAdapter.CustomViewHolder>{
     private Context mContext;
     private String TAG = "VoucherWalletAdapter.java";
-
+    VoucherDAO voucherDAO;
     List<VoucherModel> voucherModelList;
     public VoucherWalletAdapter(Context context,List<VoucherModel> voucherModelList) {
         this.mContext       =   context;
         this.voucherModelList   =   voucherModelList;
+        voucherDAO = new VoucherDAO(context);
     }
 
     @Override
@@ -45,18 +48,27 @@ public class VoucherWalletAdapter extends RecyclerView.Adapter<VoucherWalletAdap
     }
 
     @Override
-    public void onBindViewHolder(final CustomViewHolder holder, int position) {
+    public void onBindViewHolder(final CustomViewHolder holder, final int position) {
 
 
         final VoucherModel voucherModel = voucherModelList.get(position);
         holder.voucher_title.setText(voucherModel.getVoucher_title());
         holder.voucher_description.setText(voucherModel.getVoucher_text());
         holder.voucher_expires.setText(voucherModel.getVoucher_valid_until_date().split("T")[0]);
+        if(voucherModel.getVoucher_is_read()==1)
+        {
+            holder.voucher_description.setTextColor(Color.parseColor("#000000"));
+        }
+        else
+        {
+            holder.voucher_description.setTextColor(Color.parseColor("#C70973"));
+        }
+
         holder.voucher_press_for_detail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(mContext,"click me",Toast.LENGTH_LONG).show();
-                showVoucherDialog(voucherModel);
+                showVoucherDialog(voucherModel,position,holder);
             }
         });
 
@@ -84,7 +96,7 @@ public class VoucherWalletAdapter extends RecyclerView.Adapter<VoucherWalletAdap
     }
 
 
-    private void showVoucherDialog(VoucherModel voucherModel)
+    private void showVoucherDialog(final VoucherModel voucherModel, final int position, final CustomViewHolder holder)
     {
         try {
             final AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
@@ -103,6 +115,8 @@ public class VoucherWalletAdapter extends RecyclerView.Adapter<VoucherWalletAdap
             cancel.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    voucherDAO.updateVoucher(voucherModel);
+                    holder.voucher_description.setTextColor(Color.parseColor("#000000"));
                     alertDialog.dismiss();
                 }
             });

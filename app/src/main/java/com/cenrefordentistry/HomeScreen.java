@@ -3,6 +3,7 @@ package com.cenrefordentistry;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffColorFilter;
@@ -170,7 +171,9 @@ public class HomeScreen extends AppCompatActivity {
          * name, website, notifications action view (dot)
          */
         private void loadNavHeader() {
-                navigationView.getMenu().getItem(3).setActionView(R.layout.menu_dot);
+                navigationView.setItemTextColor(ColorStateList.valueOf(getResources().getColor(R.color.colorPrimaryDarker)));
+                navigationView.setItemIconTintList(ColorStateList.valueOf(getResources().getColor(R.color.colorPrimaryDarker)));
+
         }
 
         /***
@@ -224,6 +227,8 @@ public class HomeScreen extends AppCompatActivity {
                 //Closing drawer on item click
                 if(drawer!=null)
                 drawer.closeDrawers();
+               // navigationView.getMenu().getItem(index).setActionView(R.layout.menu_dot);
+
 
                 // refresh toolbar menu
                 invalidateOptionsMenu();

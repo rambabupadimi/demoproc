@@ -3,6 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/layout">
+
+
 <android.support.v7.widget.RecyclerView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -51,4 +53,11 @@
          android:textColor="@color/colorWhite"/>
 
  </LinearLayout>
+
+
+ <include layout="@layout/no_items"
+     android:visibility="gone"
+     android:id="@+id/no_items">
+
+ </include>
 </RelativeLayout>

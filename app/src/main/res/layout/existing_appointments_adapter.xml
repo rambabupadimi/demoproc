@@ -56,13 +56,17 @@
             android:text="Wednesday, 19 Jul at 14:00"
             android:textSize="18dp"
             android:textStyle="bold"
-            android:textColor="@color/colorPrimaryDarker"/>
+            android:textColor="@color/colorPrimaryDarker"
+            android:id="@+id/appointment_date"
+
+            />
 
           <TextView
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:text="Dr James Cunningham"
               android:textSize="16sp"
+              android:id="@+id/appointment_text"
               />
           <TextView
               android:layout_width="match_parent"
@@ -73,11 +77,14 @@
               android:textSize="16sp"
               android:paddingTop="4dp"
               android:paddingBottom="4dp"
+              android:id="@+id/appointment_status"
               />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Contact PCT to reschedule this appointment"/>
+                android:text="Contact PCT to reschedule this appointment"
+
+                />
 
       </LinearLayout>
 

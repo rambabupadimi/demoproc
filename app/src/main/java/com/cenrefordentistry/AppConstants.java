@@ -18,7 +18,9 @@ public interface AppConstants {
     public  final String GET_TREATMENT_TYPES = APP_URL+"api/treatment_types";
     public final String GET_VOUCHERS    =   APP_URL+"api/vouchers";
     public final String GET_MESSAGES    =   APP_URL+"api/messages";
+    public final String GET_EXISTING_APPOINTMENTS = APP_URL+"api/appointments_existing";
 
+    public final String GET_REQUEST_CALL_BACK = "api/request_contact";
 
     public final String USERNAME = "username";
     public final String PASSWORD = "password";

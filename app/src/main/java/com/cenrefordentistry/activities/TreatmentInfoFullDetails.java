@@ -67,6 +67,8 @@ public class TreatmentInfoFullDetails extends AppCompatActivity implements AppCo
         tap_here_layout = (LinearLayout) findViewById(R.id.tap_here_layout);
 
         int colorIs = 0;
+        Log.i("tag","colorcode"+getIntent().getStringExtra(AppConstants.COLOR_CODE));
+
         if(getIntent().getStringExtra(AppConstants.COLOR_CODE).equalsIgnoreCase("LGC"))
         {
            colorIs = getResources().getColor(R.color.colorPrimaryDarker);
@@ -77,12 +79,16 @@ public class TreatmentInfoFullDetails extends AppCompatActivity implements AppCo
         }else if(getIntent().getStringExtra(AppConstants.COLOR_CODE).equalsIgnoreCase("DPINK"))
         {
            colorIs = getResources().getColor(R.color.colorPink);
+        }
+        else if(getIntent().getStringExtra(AppConstants.COLOR_CODE).equalsIgnoreCase("PINK"))
+        {
+            colorIs = getResources().getColor(R.color.colorPink);
         }else if(getIntent().getStringExtra(AppConstants.COLOR_CODE).equalsIgnoreCase("VOILET"))
         {
             colorIs = getResources().getColor(R.color.colorPrimary);
-        }else if(getIntent().getStringExtra(AppConstants.COLOR_CODE).equalsIgnoreCase("LGC"))
+        }else if(getIntent().getStringExtra(AppConstants.COLOR_CODE).equalsIgnoreCase("DGC"))
         {
-           colorIs = getResources().getColor(R.color.colorRed);
+            colorIs = getResources().getColor(R.color.colorRed);
         }
 
         toolbar.setBackgroundColor(colorIs);
@@ -132,8 +138,13 @@ public class TreatmentInfoFullDetails extends AppCompatActivity implements AppCo
 
         title.setText(getResources().getText(getResources().getIdentifier(Title, "string", getPackageName())));
         description.setText(getResources().getText(getResources().getIdentifier(Description, "string", getPackageName())));
-        treatment_image.setImageDrawable(getResources().getDrawable(getResources().getIdentifier(Image_text.toLowerCase(), "drawable", getPackageName())));
-
+        try {
+            treatment_image.setImageDrawable(getResources().getDrawable(getResources().getIdentifier(Image_text.toLowerCase(), "drawable", getPackageName())));
+        }catch (Exception e)
+        {
+            treatment_image.setImageDrawable(getResources().getDrawable(R.drawable.logo));
+            e.printStackTrace();
+        }
         try {
             for (int i = 1; i <= count; i++) {
                 if (!Title.equalsIgnoreCase("drillfreedentistry_title") || !Title.equalsIgnoreCase("scaleanpolish_title")) {

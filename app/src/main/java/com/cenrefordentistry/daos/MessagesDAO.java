@@ -9,6 +9,7 @@ import android.util.Log;
 import com.cenrefordentistry.DatabaseFields;
 import com.cenrefordentistry.models.MessagesModel;
 import com.cenrefordentistry.models.TreatmentInfoModel;
+import com.cenrefordentistry.models.VoucherModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -65,7 +66,7 @@ public class MessagesDAO extends AbstractDAO implements DatabaseFields {
     {Cursor cursor=null;
         try
         {
-            String sql = "select * from " + TABLE_MESSAGES;
+            String sql = "select * from " + TABLE_MESSAGES+" where "+COLUMN_MESSAGE_IS_ACTIVE+" != 1";
             Log.i(TAG,"sql"+sql);
             SQLiteDatabase db = this.getReadableDatabase();
             cursor = db.rawQuery(sql,null);
@@ -105,5 +106,47 @@ public class MessagesDAO extends AbstractDAO implements DatabaseFields {
     }
 
 
+    public int updateMessageDelete(MessagesModel messagesModel)
+    {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(COLUMN_MESSAGE_IS_ACTIVE,1);
+        int status = db.update(TABLE_MESSAGES,values, COLUMN_MESSAGE_ID + "=?", new String[]{String.valueOf(messagesModel.getMessage_id())});
+        return status;
+    }
+
+    public int updateMessageIsRead(MessagesModel messagesModel)
+    {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(COLUMN_MESSAGE_IS_READ,1);
+        int status = db.update(TABLE_MESSAGES,values, COLUMN_MESSAGE_ID + "=?", new String[]{String.valueOf(messagesModel.getMessage_id())});
+        return status;
+    }
+
+    public void updateMessageIsReadAll(List<MessagesModel> messagesModelList)
+    {
+        if(messagesModelList!=null && messagesModelList.size()>0)
+        {
+            for(int i=0;i<messagesModelList.size();i++)
+            {
+                MessagesModel messagesModel = messagesModelList.get(i);
+                updateMessageIsRead(messagesModel);
+            }
+        }
+    }
+
+    public void updateMessageDeleteAll(List<MessagesModel> messagesModelList)
+    {
+        if(messagesModelList!=null && messagesModelList.size()>0)
+        {
+            for(int i=0;i<messagesModelList.size();i++)
+            {
+                MessagesModel messagesModel = messagesModelList.get(i);
+                updateMessageDelete(messagesModel);
+            }
+        }
+
+    }
 
 }

@@ -173,6 +173,7 @@ public class RegisterDob extends AppCompatActivity implements AppConstants{
                                                 postAuthMessages1.setJson(jsonObject1,"vouchers");
                                                 postAuthMessages1.execute(AppConstants.GET_VOUCHERS);
 
+                                                //existing appointments
 
 
 
